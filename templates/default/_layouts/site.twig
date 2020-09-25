@@ -1,0 +1,56 @@
+{% extends "default/_layouts/base" %}
+
+{% import "_macros/isactive" as isactive %}
+
+{% block body %}
+
+<!-- Loading -->
+{% include "_includes/global/loading" %}
+<!-- End Loading -->
+
+<div class="off-canvas-wrapper">
+<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-transition="push" data-auto-focus="false" data-close-on-click="false" data-content-overlay="false">
+  <div class="grid-x grid-padding-x grid-padding-y padding-bottom-0 align-justify align-middle">
+  <div class="shrink cell align-middle padding-bottom-0">
+  		<ul class="menu vertical">
+      {% set categoryQuery = craft.categories().group('typeOfProject') %}
+      {% set categories = categoryQuery.all() %}
+      {% nav category in categories %}
+      <li{{ isactive.isActive(category.slug) }}>
+      <a href="{{ category.url }}" data-toggle="menuBar offCanvasRight">{{ category.title }}</a>
+      </li>
+      {% endnav %}
+      <li {{ isactive.isActive('contact') }} data-toggle="menuBar offCanvasRight"><a href="/contact">Contact</a></li>
+      </ul>
+  </div>
+  </div>
+</div>
+
+<div class="off-canvas-content viewport page--testing testing--hide" data-off-canvas-content>
+
+  <!-- Navigation -->
+  <nav class="" id="swup-navigation">
+  {% block navigation %}
+  {% endblock %}
+  </nav>
+  <!-- End Navigation -->
+
+  <!-- Content -->
+  <main class="grid-x align-center-middle swup-transition-fade" id="swup-body">
+    <div class="small-12 cell">	
+    {% block main %}
+    {% endblock %}
+    </div>
+  </main>
+  <!-- End Content -->
+  
+  <!-- Footer -->
+  <footer class="swup-transition-fade" id="swup-footer">
+  {% block footer %}
+  {% endblock %}
+  </footer>
+  <!-- End Footer-->
+</div>
+</div>
+
+{% endblock %}

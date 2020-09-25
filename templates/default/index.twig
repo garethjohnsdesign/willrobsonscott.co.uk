@@ -1,0 +1,47 @@
+{% set bodyClass = 'home' %}
+
+{% if entry.seoTitle | length %}
+{% set seoTitle = entry.seoTitle %}
+{% else %}
+{% set seoTitle = entry.title %}
+{% endif %}
+
+{% if entry.seoDescription | length %}
+{% set seoDescription = entry.seoDescription %}
+{% endif %}
+
+{% set projects = craft.entries
+.section('projects')
+.all() %}
+
+{% extends "default/_layouts/site" %}
+
+{% block navigation %}
+{% include "_includes/global/navigation" %}
+{% endblock %}
+
+{% block main %}
+
+<!-- Projects -->
+{% set projectCount = projects|length %}
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-justify">
+    {% for project in projects %}
+      <div class="small-12 medium-6 large-4 cell">
+      {% include "_includes/blocks/excerpt" %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<!-- End Projects -->
+
+<div class="overlay screen ghost is-active text-center show-for-medium">
+    <div class="ghost__child text-center">
+        <h1 class="squareIdent"></h1>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

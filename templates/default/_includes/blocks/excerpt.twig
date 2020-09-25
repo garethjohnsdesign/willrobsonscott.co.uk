@@ -1,0 +1,23 @@
+<div class="grid-y grid-padding-y padding-2 align-center" style="height: 100%;" data-aos="fade-in">
+<div class="shrink cell">
+
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+  <div class="small-12 cell text-center">
+  <a href="{{ project.url }}" class="square" data-text="{{ project.title }}">
+    {% set image = project.image.one() %}
+    <div class="excerpt">
+    {% if image | length %}
+    <img class="max-viewheight-75" data-interchange="{% include "_includes/images/contained/original/interchange-img-small-12-medium-4" %}">
+    {% endif %}
+    </div>
+    <div class="grid-x align-justify padding-top-half show-for-small-only">
+      <div class="auto cell">
+      {{project.title}}
+      </div>
+    </div>
+  </a>
+  </div>
+</div>
+
+</div>
+</div>

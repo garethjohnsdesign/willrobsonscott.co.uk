@@ -1,0 +1,49 @@
+{% set bodyClass = 'information' %}
+
+{% if entry.seoTitle | length %}
+{% set seoTitle = entry.seoTitle %}
+{% else %}
+{% set seoTitle = entry.title %}
+{% endif %}
+
+{% if entry.seoDescription | length %}
+{% set seoDescription = entry.seoDescription %}
+{% endif %}
+
+{% extends "_layouts/site" %}
+
+{% block navigation %}
+{% include "_includes/global/navigation" %}
+{% endblock %}
+
+{% block main %}
+
+<!-- Info -->
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+      <div class="small-12 medium-10 large-8 cell">
+        {{ entry.copy }}
+      </div>
+  </div>
+</div>
+<!-- End Info -->
+
+<!-- Contact -->
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    {% for detail in entry.detail.all() %}
+      <div class="small-12 medium-6 large-4 cell detail">
+        <p>{{ detail.header }}</p>
+        {{ detail.copy }}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<!-- End Contact  -->
+
+
+{% endblock %}
+
+{% block footer %}
+{% include "_includes/global/footer" %}
+{% endblock %}

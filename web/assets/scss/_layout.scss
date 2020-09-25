@@ -1,0 +1,850 @@
+//  Table of Contents:
+//
+//   1. Mixins
+//   2. Global
+//   3. Animations
+//   4. Color
+//   5. Typography
+//   6. Layout
+
+
+// 1. Mixins
+// ---------
+
+@mixin links ($link, $hover) {
+  a {
+    color: $link;
+    &:hover {
+      color: $hover;   
+    }
+  }
+}
+
+@mixin hamburger-bar() {
+    background-color: $hamburger-color;
+    border-radius: $hamburger-bar-border-radius;
+    content: '';
+    display: block;
+    height: $hamburger-thickness;
+    position: absolute;
+    width: 100%;
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+ .content {
+//     transition: $primary-transition;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie);
+}
+
+// 2. Global
+// ---------
+
+.menu .menu-text {
+font-weight: normal;
+}
+
+.off-canvas-wrapper {
+  overflow: visible;
+}
+
+.off-canvas-content {
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(var(--vh, 1vh) * 100);
+  font-kerning: normal;
+}
+
+.off-canvas {
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  z-index: 2
+}
+
+
+
+body {
+  cursor: default;
+  font-kerning: normal;
+}
+
+svg {
+  max-width: 100%;
+}
+
+::selection {
+  background: $primary-color;
+  color: $black;
+}
+
+:focus {
+  outline: 0;
+}
+
+// 3. Animations
+// -------------
+
+.swup-transition-fade-up {
+  transition: opacity 0.5s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+html.is-animating .swup-transition-fade-up {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.swup-transition-fade {
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+html.is-animating .swup-transition-fade {
+  opacity: 0;
+}
+
+.swup-transition-color {
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+html.is-animating .swup-transition-color {
+  opacity: 0;
+}
+
+// 4. Color
+// --------
+
+.primary-color {
+  color: get-color(primary);
+}
+
+.secondary-color {
+  color: get-color(secondary);
+}
+
+.primary-background-color {
+  background-color: get-color(primary);
+  color: $white;
+  @include links($white, $secondary-color)
+}
+
+
+.secondary-background-color {
+  background-color: get-color(secondary);
+  color: $primary-color;
+  @include links($primary-color, $secondary-color)
+}
+
+
+.white-background-color {
+  background-color: $white;
+  color: $black;
+  @include links($primary-color, $secondary-color)
+}
+
+.light-gray-background-color {
+  background-color: $light-gray;
+  color: $black;
+  @include links($primary-color, $secondary-color)
+}
+
+.dark-gray-background-color {
+  background-color: $dark-gray;
+  color: $white;
+  @include links($primary-color, $secondary-color)
+}
+
+
+.black-background-color {
+  background-color: $black;
+  color: $white;
+  @include links($white, $secondary-color)
+}
+
+.white {
+  color: $white;
+  @include links ($white, $medium-gray);
+}
+
+.medium-gray {
+  color: $medium-gray;
+  @include links ($medium-gray, $black);
+}
+
+.light-gray {
+  color: $light-gray;
+  @include links ($light-gray, $medium-gray);
+}
+
+.dark-gray {
+  color: $dark-gray;
+  @include links ($dark-gray, $black);
+}
+
+.black {
+  color: $black;
+  @include links ($black, $medium-gray);
+}
+
+// 5. Typography
+// -------------
+
+.underline {
+  text-decoration: underline;
+}
+
+i, cite, em, var, address, dfn {
+  font-style: normal;
+}
+
+p a {
+  color: $primary-color;
+  &:hover {
+    color: $secondary-color;   
+  }
+}
+
+.link {
+  color: get-color(primary);
+  &:hover {
+    color: get-color(secondary);   
+  }
+}
+
+.logo {
+  font-family: $logo;
+}
+
+.sans-light {
+  font-family: $sans-light;
+}
+
+.sans-regular {
+  font-family: $sans-regular;
+}
+
+.sans-bold {
+  font-family: $sans-bold;
+}
+
+.sans-display {
+  font-family: $sans-display;
+}
+
+.serif-light {
+  font-family: $serif-light;
+}
+
+.serif-regular {
+  font-family: $serif-regular;
+}
+
+.serif-italic {
+  font-family: $serif-italic;
+}
+
+.serif-bold {
+  font-family: $serif-bold;
+}
+
+.serif-display {
+  font-family: $serif-display;
+}
+
+.small {
+  font-size: $small-font-size;
+}
+
+.letter-spacing--loose {
+  letter-spacing: $letter-spacing--loose;
+}
+
+// 6. Layout
+// ---------
+
+.wrapper {
+  @include padding(1, 1, 0, 1);
+}
+
+.image--1-1 {
+  @include aspect-ratio (1, 1);
+  background-size: cover; 
+  background-position: 50%;
+}
+
+
+.image--5-4 {
+  @include aspect-ratio (5, 4);
+  background-size: cover; 
+  background-position: 50%;
+}
+
+.image--4-6 {
+  @include aspect-ratio (4, 6);
+  background-size: cover; 
+  background-position: 50%;
+}
+
+.image--6-4 {
+  @include aspect-ratio (6, 4);
+  background-size: cover; 
+  background-position: 50%;
+}
+
+.image--3-4 {
+  @include aspect-ratio (3, 4);
+  background-size: cover; 
+  background-position: 50%;
+}
+
+.image--5-7 {
+  @include aspect-ratio (5, 7);
+  background-size: cover; 
+  background-position: 50%;
+}
+
+.image--7-5 {
+  @include aspect-ratio (7, 5);
+  background-size: cover; 
+  background-position: 50%;
+}
+
+.image--16-9 {
+  @include aspect-ratio (16, 9);
+  background-size: cover; 
+  background-position: 50%;
+}
+
+.image--24-1 {
+  @include aspect-ratio (2.4, 1);
+  background-size: cover; 
+  background-position: 50%;
+}
+
+.image--185-1 {
+  @include aspect-ratio (1.85, 1);
+  background-size: cover; 
+  background-position: 50%;
+}
+
+.image--hero {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  background-size: cover; 
+  background-position: 50%;
+}
+
+
+// 6. Navigation
+// -------------
+
+.navigation {
+  width: 100%;
+}
+
+// 9. Home
+// -------
+
+.off-canvas .menu .active > a {
+  background: transparent;
+  color: $black;
+}
+
+.swiper-button-prev-test,
+.swiper-button-next-test {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 0;
+}
+
+.swiper-button-prev-test {
+  left: 0rem;
+  right: auto;
+}
+.swiper-button-next-test {
+  right: 0rem;
+  left: auto;
+}
+
+.swiper-button-prev-test {
+cursor: w-resize;
+cursor: url('/assets/img/arrow-left.png') 16 16, auto !important;
+cursor: -webkit-image-set(
+url('/assets/img/arrow-left.png') 1x,
+url('/assets/img/arrow-left@2x.png') 2x,
+url('/assets/img/arrow-left@3x.png') 3x
+) 16 16, auto !important;
+}
+
+.swiper-button-next-test {
+  cursor: e-resize;
+  cursor: url('/assets/img/arrow-right.png') 16 16, auto !important;
+  cursor: -webkit-image-set(
+  url('/assets/img/arrow-right.png') 1x,
+  url('/assets/img/arrow-right@2x.png') 2x,
+  url('/assets/img/arrow-right@3x.png') 3x
+  ) 16 16, auto !important;
+}
+
+
+.excerpt {
+  .content {
+    @include opacity(1);
+    background: rgba($black, 0);
+  }
+  &:hover .content {
+    transition: $primary-transition;
+    background: rgba($black, 0.25);
+    @include opacity(1);
+  }
+}
+
+.footer .menu li:last-child a {
+  padding-right: 0;
+}
+
+.active {
+  color: $primary-color !important;
+}
+
+.hamburger-inner--active {
+  .hamburger-inner {
+    &,
+    &::before,
+    &::after {
+      background-color: $primary-color !important;
+    }
+  }
+}
+
+p:last-child {
+ margin-bottom: 0;
+}
+
+.testing {
+ transform: scale(1.04);
+}
+
+.testing--hide {
+opacity: 0;
+}
+
+.excerpt__wrapper {
+  overflow: hidden;
+}
+
+
+.reveal {
+  @include breakpoint(medium down) {
+  @include padding(1, 1, 1, 1);
+  }
+  @include padding(2, 2, 2, 2);
+}
+
+.border-bottom {
+  border-bottom: 1px solid $dark-gray
+}
+
+.plyr--full-ui input[type=range] {
+  color: $black;
+}
+
+.plyr__control--overlaid {
+  background: rgba($black, .0);
+}
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded=true] {
+  background: $black;
+}
+
+.plyr__control.plyr__tab-focus {
+  box-shadow: 0 0 0 5px rgba($black, .5);
+}
+
+.plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
+  background: $black;
+}
+
+.tippy-box[data-theme~='custom'] {
+  background-color: transparent;
+  color: $black;
+  font-size: 1rem;
+}
+
+.tippy-tooltip.custom-theme[data-animatefill] {
+  background-color: transparent;
+}
+
+.tippy-tooltip.custom-theme .tippy-backdrop {
+  background-color: transparent;
+}
+
+.tippy-box[data-theme~='custom'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: transparent;
+}
+.tippy-box[data-theme~='custom'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: transparent;
+}
+.tippy-box[data-theme~='custom'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: transparent;
+}
+.tippy-box[data-theme~='custom'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: transparent;
+}
+.excerpt {
+position: relative;
+overflow: hidden;
+}
+
+.home .video {
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.home .video {
+  z-index: -1;
+}
+
+
+.excerpt {
+  .video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  min-width: 100%;
+  min-height: 100%;
+    @include opacity(0);
+  }
+  &:hover .video {
+    @include opacity(1);
+  }
+}
+
+.padding-left {
+padding-left: 0.5rem !important;
+}
+
+.padding {
+  @include breakpoint(small) {
+    @include padding(1, 1, 1, 1);
+  }
+/*
+  @include breakpoint(large) {
+    @include padding(2, 2, 2, 2);
+  }
+*/
+  @include breakpoint(xlarge) {
+    @include padding(1.5, 1.5, 1.5, 1.5);
+  }
+}
+
+/*
+.home__hero {
+min-height: 100vh;
+padding-top: 6rem;
+padding-bottom: 6rem;
+position: relative;
+}
+*/
+
+/*
+.home__hero__image {
+height: 100%;
+width: 100%;
+position: absolute;
+z-index: -1;
+}
+
+.image--hero {
+  height: 100%;
+  background-size: cover; 
+  @include breakpoint(small) {
+  background-position: 50% 50%;
+  }
+  @include breakpoint(medium) {
+  background-position: 50% 50%;
+  }
+}
+*/
+
+
+.opacity-50 {
+  @include opacity(0.5);
+}
+
+.button-group {
+  background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+}
+
+.button--correct {
+  padding-top: 11px;
+}
+
+.detail ul {
+  margin-left: 0rem;
+  list-style-type: none;
+}
+
+.padding-top-half {
+  padding-top: 0.75rem
+}
+
+[data-aos="new-animation"] {
+    opacity: 0;
+  &.aos-animate {
+    opacity: 1
+  }
+}
+
+// 2. Loading
+// ----------
+
+.loader {
+    pointer-events: none;
+    z-index: 1040;
+    position: fixed;
+    background: $white;
+    color: $black;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+    opacity: 0;
+    visibility: visible;
+    transition: opacity .5s ease-out,transform .5s ease-out;
+    transition-delay: 1s;
+/*
+    transform: translateY(0%);
+    transition: transform 800ms;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+*/
+    overflow: hidden;
+  &.loading {
+    opacity: 1;
+  }
+  &.loaded {
+    opacity: 0;
+/*
+    transform: translateY(-100%);
+    transition: transform 800ms;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+*/
+  }
+}
+
+
+
+
+$hamburger-color: $white;
+$hamburger-color-hover: $white;
+$hamburger-color-active: $white;
+
+@mixin hamburger-bar() {
+    background-color: $hamburger-color;
+    border-radius: $hamburger-bar-border-radius;
+    content: '';
+    display: block;
+    height: $hamburger-thickness;
+    position: absolute;
+    width: 100%;
+}
+
+button.#{$hamburger-class-name} {
+    height: $hamburger-size;
+    width: $hamburger-size;    
+}
+
+div.#{$hamburger-class-name} {
+    height: $hamburger-size - ($hamburger-border-width * 2);
+    width: $hamburger-size - ($hamburger-border-width * 2);
+
+    > .inner {
+        top: 50%;
+    }   
+}
+
+.min-viewheight-50 {
+  min-height: 50vh;
+}
+
+.min-viewheight-75 {
+  min-height: 75vh;
+}
+
+.max-viewheight-50 {
+  max-height: 50vh;
+}
+
+.max-viewheight-66 {
+  max-height: 66.6vh;
+}
+
+.max-viewheight-75 {
+  max-height: 75vh;
+}
+
+   .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+
+.button-prev {
+  padding-right: 0.5rem;
+  }
+
+.button-next {
+  padding-left: 0.5rem;
+  }
+
+.link, .button-prev, .button-next {
+  cursor: pointer;
+   &:hover {
+      color: $secondary-color;   
+    }
+}
+
+.swiper-slide {
+  cursor: e-resize;
+}
+
+
+.screen {
+background-color: #fff;
+bottom: 0;
+left: 0;
+opacity: 0;
+overflow-x: hidden;
+overflow-y: scroll;
+position: fixed;
+right: 0;
+top: 0;
+transition: opacity 300ms ease,transform 400ms cubic-bezier(.77,0,.175,1);
+z-index: 1000;
+}
+
+.screen.is-active {
+opacity: 1;
+-webkit-overflow-scrolling: touch;
+}
+
+.overlay {
+background-color: rgba(255,255,255,.05);
+pointer-events: none;
+}
+
+.ghost {
+    font-size:0
+}
+
+.ghost:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    margin-left: -1px;
+    vertical-align: middle;
+    width:1px
+}
+
+.ghost__child {
+    display: inline-block;
+    vertical-align:middle
+}
+
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
+
+
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 16px;
+$max_font: 72px;
+
+
+h1 {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
