@@ -35,6 +35,7 @@
 
 
 {% block main %}
+
 <!-- Carousel -->
 <div class="grid-container">
   <div class="swiper-container-gallery">
@@ -43,25 +44,39 @@
           <!-- Slides -->
           {% for image in entry.images.all() %}
           <div class="swiper-slide">
-          <div class="grid-x grid-padding-x align-center">
-            <div class="small-12 cell text-center"> 
-              {% switch image.aspectRatio %}
-              {% case "original" %}
-              <img class="max-viewheight-66" data-interchange="{% include "_includes/images/contained/original/interchange-img-small-12-medium-6" %}">
-              {% if image.caption %}<div class="padding-top-half">{{image.caption}}</div>{% endif %}
-              {% case "1-1" or "5-4" or "5-7" or "6-4" or "7-5" or "16-9" or "3-4" %}
-              <img class="max-viewheight-66" data-interchange="{% include "_includes/images/contained/"~image.aspectRatio~"/interchange-img-small-12-medium-12" %}">
-              {% default %}
-              <img class="max-viewheight-66" data-interchange="{% include "_includes/images/contained/7-5/interchange-img-small-12-medium-12" %}">
-              {% endswitch %}
+
+
+            <div class="grid-x grid-padding-x align-center">
+              <div class="small-12 cell text-center">
+
+  <div class="grid-y align-center height-100">
+    <div class="shrink cell">
+
+                {% switch image.aspectRatio %}
+                {% case "original" %}
+                <img class="max-viewheight-66" data-interchange="{% include "_includes/images/contained/original/interchange-img-small-12-medium-6" %}">
+                {% if image.caption %}<div class="padding-top-half">{{image.caption}}</div>{% endif %}
+                {% case "1-1" or "5-4" or "5-7" or "6-4" or "7-5" or "16-9" or "3-4" %}
+                <img class="max-viewheight-66" data-interchange="{% include "_includes/images/contained/"~image.aspectRatio~"/interchange-img-small-12-medium-12" %}">
+                {% default %}
+                <img class="max-viewheight-66" data-interchange="{% include "_includes/images/contained/7-5/interchange-img-small-12-medium-12" %}">
+                {% endswitch %}
+
+    </div>
+  </div>
+
+              </div>
             </div>
-          </div>
+
+
           </div>
           {% endfor %}
       </div>
   </div>
 </div>
 <!-- End Carousel -->
+
+
 
 <!-- Grid -->
 <div class="full reveal" id="grid-reveal{{entry.id}}" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
@@ -103,6 +118,7 @@
 </div>
 {% endif %}
 <!-- End Credits -->
+
 
 {% endblock %}
 

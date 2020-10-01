@@ -844,3 +844,7 @@ $max_font: 72px;
 h1 {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
 }
+
+.swiper-slide {
+  height: auto;
+}
