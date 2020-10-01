@@ -9,6 +9,7 @@ import Cookies from 'js-cookie';
 import Foundation from 'foundation-sites';
 import AOS from 'aos';
 import Swup from 'swup';
+import SwupProgressPlugin from '@swup/progress-plugin';
 import SwupBodyClassPlugin from "@swup/body-class-plugin";
 import SwupScrollPlugin from '@swup/scroll-plugin';
 import SwupGaPlugin from '@swup/ga-plugin';
@@ -202,6 +203,7 @@ const options = {
   animationSelector: '[class*="swup-transition-"]',
   containers: [ '#swup-body', '#swup-header', '#swup-navigation', '#swup-footer' ],
   plugins: [
+    new SwupProgressPlugin(),
     new SwupPreloadPlugin(),
     new SwupBodyClassPlugin(),
     new SwupGaPlugin(),

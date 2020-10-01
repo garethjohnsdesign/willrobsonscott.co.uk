@@ -69,7 +69,6 @@
 // ---------
 
 $global-font-size: 100%;
-$global-font-size: 16px;
 // $global-width: rem-calc(1200);
 $global-width: rem-calc(1600);
 $global-lineheight: 1.5;
@@ -421,23 +420,49 @@ $card-margin-bottom: $global-margin;
 // ----------------
 
 $closebutton-position: right top;
+$closebutton-position: left bottom;
 $closebutton-z-index: 10;
 $closebutton-default-size: medium;
+/*
 $closebutton-offset-horizontal: (
   small: 0.66rem,
   medium: 1rem,
 );
+*/
+$closebutton-offset-horizontal: (
+  small: 32px,
+  medium: 48px,
+  large: 48px,
+  xlarge: 72px,
+  xxlarge: 98px,
+);
+/*
 $closebutton-offset-vertical: (
   small: 0.33em,
   medium: 0.5rem,
 );
+*/
+$closebutton-offset-vertical: (
+  small: 32px,
+  medium: 48px,
+  large: 48px,
+  xlarge: 72px,
+  xxlarge: 98px,
+);
+/*
 $closebutton-size: (
   small: 1.5em,
   medium: 2em,
 );
+*/
+$closebutton-size: (
+  small: 1em,
+  medium: 1em,
+);
 $closebutton-lineheight: 1;
-$closebutton-color: $dark-gray;
-$closebutton-color-hover: $black;
+// $closebutton-color: $dark-gray;
+$closebutton-color: $black;
+$closebutton-color-hover: $dark-gray;
 
 // 16. Drilldown
 // -------------
@@ -965,17 +990,10 @@ $grid-margin-gutters: (
   small: 32px,
   medium: 48px,
   large: 48px,
-  xlarge: 64px,
-  xxlarge: 92px
+  xlarge: 72px,
+  xxlarge: 98px,
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;
-$grid-container-padding: (
-  small: 32px,
-  medium: 48px,
-  large: 48px,
-  xlarge: 64px,
-  xxlarge: 92px
-);
 $grid-container-max: $global-width;
 $xy-block-grid-max: 8;
