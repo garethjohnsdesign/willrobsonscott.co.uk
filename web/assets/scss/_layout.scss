@@ -880,3 +880,15 @@ overflow: visible;
     transform: translate3d(0, -8px, 0);
 }
 }
+
+.six {
+  @include breakpoint(medium) {
+  a {
+    color: $white;
+    transition: $primary-transition;
+    &:hover {
+      color: $black;   
+    }
+  }
+}
+}
