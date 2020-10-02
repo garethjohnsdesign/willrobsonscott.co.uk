@@ -841,6 +841,7 @@ background: rgba($black, 0.25);
 }
 
 .five {
+overflow: visible;
   a {
     color: $white;
     transition: $primary-transition;
@@ -848,4 +849,25 @@ background: rgba($black, 0.25);
       color: $black;   
     }
   }
+}
+
+
+.five .excerpt {
+overflow: visible;
+}
+
+.five img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.five a:hover img {
+    -webkit-transform: translate3d(0, -8px, 0);
+    transform: translate3d(0, -8px, 0);
 }
