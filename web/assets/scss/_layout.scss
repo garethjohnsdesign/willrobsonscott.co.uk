@@ -841,7 +841,8 @@ background: rgba($black, 0.25);
 }
 
 .five {
-overflow: visible;
+  @include breakpoint(medium) {
+  overflow: visible;
   a {
     color: $white;
     transition: $primary-transition;
@@ -850,13 +851,17 @@ overflow: visible;
     }
   }
 }
+}
 
 
 .five .excerpt {
+  @include breakpoint(medium) {
 overflow: visible;
+}
 }
 
 .five img {
+  @include breakpoint(medium) {
     width: 100%;
     height: auto;
     -webkit-transition: -webkit-transform 0.3s;
@@ -866,8 +871,11 @@ overflow: visible;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
+}
 
 .five a:hover img {
+  @include breakpoint(medium) {
     -webkit-transform: translate3d(0, -8px, 0);
     transform: translate3d(0, -8px, 0);
+}
 }
