@@ -33,7 +33,7 @@
 <div class="shrink cell">
 
 <div class="grid-x grid-padding-x grid-padding-y align-center">
-  <div class="small-12 cell text-center five">
+  <div class="small-12 cell text-center">
   <a href="{{ project.url }}" class="square" data-text="{{ project.title }}">
     {% set image = project.image.one() %}
     <div class="excerpt">
@@ -43,7 +43,7 @@
     </div>
     <div class="grid-x align-justify padding-top-half">
       <div class="auto cell">
-      <div class="project--title">{{project.title}}</div>
+      {{project.title}}
       </div>
     </div>
   </a>

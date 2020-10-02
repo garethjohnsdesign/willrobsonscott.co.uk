@@ -1,0 +1,208 @@
+field: 372a5521-190d-44d5-83ad-8737b49bdbdd
+fieldLayouts:
+  42aa8c85-ee6e-4fab-b282-7d1e1d5bb47d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ae58a047-b675-4ef2-a00d-46aefe3579d0
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ad7dbb97-b6a9-403d-a937-f6f753a4ae71
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3755ef03-82c8-4c89-ae14-7f4b0ff7e484
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  3755ef03-82c8-4c89-ae14-7f4b0ff7e484:
+    contentColumnType: string
+    fieldGroup: null
+    handle: offset
+    instructions: ''
+    name: Offset
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - None
+            -
+              - value
+              - none
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - One
+            -
+              - value
+              - large-offset-1
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Two
+            -
+              - value
+              - large-offset-2
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Three
+            -
+              - value
+              - large-offset-3
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Four
+            -
+              - value
+              - large-offset-4
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  ad7dbb97-b6a9-403d-a937-f6f753a4ae71:
+    contentColumnType: string
+    fieldGroup: null
+    handle: width
+    instructions: ''
+    name: Width
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 1/6
+            -
+              - value
+              - 'small-12 medium-2'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 1/3
+            -
+              - value
+              - 'small-12 medium-4'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 1/2
+            -
+              - value
+              - 'small-12 medium-6'
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 2/3
+            -
+              - value
+              - 'small-12 medium-8'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 5/6
+            -
+              - value
+              - 'small-12 medium-10'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 1/1
+            -
+              - value
+              - 'small-12 medium-12'
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  ae58a047-b675-4ef2-a00d-46aefe3579d0:
+    contentColumnType: string
+    fieldGroup: null
+    handle: project
+    instructions: ''
+    name: Project
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:32174234-e8c3-40d4-9725-77ff2bd2366a'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: project
+name: Project
+sortOrder: 1

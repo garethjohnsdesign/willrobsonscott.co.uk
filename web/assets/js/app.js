@@ -2,7 +2,6 @@
 // ----------
 
 import $ from "jquery";
-import Plyr from 'plyr';
 import tippy, {followCursor} from 'tippy.js';
 import Swiper, { Navigation, Pagination, EffectFade, Keyboard} from 'swiper';
 import Cookies from 'js-cookie';
@@ -30,6 +29,11 @@ Foundation.Interchange.SPECIAL_QUERIES['xxlarge-retina'] = 'only screen and (min
 $(document).foundation();
 
 
+// 3. Vime
+// ----------
+
+const player = document.querySelector('vime-player');
+
 // 3. Loading
 // ----------
 
@@ -41,6 +45,7 @@ tippy('[data-tippy-content]', {
   flip: false,
   plugins: [followCursor]
 })
+
 
 // 5. Carousel
 // -----------
@@ -96,10 +101,6 @@ $(".square").hover(function(){
 
 var videoGallery = new Swiper('.swiper-container-video', {
   // Optional parameters
- effect: 'fade',
- fadeEffect: {
-    crossFade: true
-  },
   loop: true,
   
   // If we need pagination
@@ -117,25 +118,6 @@ var videoGallery = new Swiper('.swiper-container-video', {
     enabled: true,
   },
 })
-
-
-// 4. Plyr
-// ----------
-
-const players = Plyr.setup('.js-player', {
-  ratio: '16:9',
-  controls: ['play', 'progress', 'mute', 'volume', 'pip', 'airplay', 'fullscreen']
-});
-
-
-// 5. Hamburger
-// ------------
-
-var $hamburger = $(".hamburger");
-  $hamburger.on("click", function(e) {
-    $hamburger.toggleClass("is-active");
-    // Do something else, like open/close menu
-  });
 
 
 // 6. Viewport Height Fix

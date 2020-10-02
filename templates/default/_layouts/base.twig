@@ -18,7 +18,6 @@
 </head>
   <body class="{% if bodyClass is defined %}{{ bodyClass }}{% endif %}">
 	{% block body %}{% endblock %}
-  {% include "default/_includes/global/scripts" %}
 	</body>
 </html>
 {%- endminify -%}
