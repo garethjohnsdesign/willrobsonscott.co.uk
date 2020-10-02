@@ -47,6 +47,54 @@ tippy('[data-tippy-content]', {
 })
 
 
+$(function() {
+  let isIOS = /iPad|iPhone|iPod/.test(navigator.platform) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+
+  if (isIOS) {
+    $("video.video--background").attr("playsinline", "")
+  }
+
+  $("video.video--background source").each(function(i) {
+    var sourceFile = $(this).attr("data-src");
+    $(this).attr("src", sourceFile);
+    var video = this.parentElement;
+
+      setTimeout(function () {
+        if (!video.__played) {
+         video.load()
+        }
+      }, 2000)
+  });
+
+  
+  handleVideoPlay(mySwiper)
+});
+
+
+$(function() {
+
+  const $videos = $("video.video--background source")
+
+
+  const index = 0
+  const loadOneByOne = () => {
+    var $video = $videos.eq(index)
+    var sourceFile = $video.attr("data-src");
+    $video.attr("src", sourceFile);
+    var video = $video.get(0).parentElement;
+    video.onload = function () {
+      ++index;
+      loadOneByOne()
+    }
+    video.load();
+    if (index === 0) {
+       video.play()
+    }
+  }  
+
+  loadOneByOne()
+});
+
 // 5. Carousel
 // -----------
 
