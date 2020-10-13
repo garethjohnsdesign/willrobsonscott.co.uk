@@ -2,10 +2,10 @@
 // ----------
 
 import $ from "jquery";
-import tippy, {followCursor} from 'tippy.js';
-import Swiper, { Navigation, Pagination, EffectFade, Keyboard} from 'swiper';
 import Cookies from 'js-cookie';
 import Foundation from 'foundation-sites';
+import Swiper, { Navigation, Pagination, EffectFade, Keyboard} from 'swiper';
+import Plyr from 'plyr';
 import AOS from 'aos';
 import Swup from 'swup';
 import SwupProgressPlugin from '@swup/progress-plugin';
@@ -29,70 +29,28 @@ Foundation.Interchange.SPECIAL_QUERIES['xxlarge-retina'] = 'only screen and (min
 $(document).foundation();
 
 
-// 3. Vime
-// ----------
-
-const player = document.querySelector('vime-player');
 
 // 3. Loading
 // ----------
 
-
-tippy('[data-tippy-content]', {
-  placement: 'bottom',
-  followCursor: true,
-  theme: 'custom',
-  flip: false,
-  plugins: [followCursor]
-})
-
-
 $(function() {
-  let isIOS = /iPad|iPhone|iPod/.test(navigator.platform) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
-
-  if (isIOS) {
-    $("video.video--background").attr("playsinline", "")
-  }
-
-  $("video.video--background source").each(function(i) {
+  $("video.video--background source").each(function() {
     var sourceFile = $(this).attr("data-src");
     $(this).attr("src", sourceFile);
     var video = this.parentElement;
-
-      setTimeout(function () {
-        if (!video.__played) {
-         video.load()
-        }
-      }, 2000)
+    video.load();
+    video.play();
   });
-
-  
-  handleVideoPlay(mySwiper)
 });
 
+// 4. Plyr
+// ----------
 
-$(function() {
+const players = Plyr.setup('.js-player');
 
-  const $videos = $("video.video--background source")
-
-
-  const index = 0
-  const loadOneByOne = () => {
-    var $video = $videos.eq(index)
-    var sourceFile = $video.attr("data-src");
-    $video.attr("src", sourceFile);
-    var video = $video.get(0).parentElement;
-    video.onload = function () {
-      ++index;
-      loadOneByOne()
-    }
-    video.load();
-    if (index === 0) {
-       video.play()
-    }
-  }  
-
-  loadOneByOne()
+const player = new Plyr('#player', {
+  ratio: '16:9',
+  controls: ['play', 'progress', 'mute', 'volume', 'pip', 'airplay', 'fullscreen']
 });
 
 // 5. Carousel
@@ -103,7 +61,7 @@ Swiper.use([Navigation, Pagination, EffectFade, Keyboard]);
 
 const swiper = new Swiper();
 
-var imageGallery = new Swiper('.swiper-container-gallery', {
+var stillsSwiper = new Swiper('.swiper--stills', {
   // Optional parameters
  effect: 'fade',
  fadeEffect: {
@@ -129,21 +87,8 @@ var imageGallery = new Swiper('.swiper-container-gallery', {
 
 $('a[data-slide]').click(function(e){
   e.preventDefault();
-  imageGallery.slideTo( $(this).data('slide') );
+  stillsSwiper.slideTo( $(this).data('slide') );
 })
-
-
-$(".square").hover(function(){
-    $(".squareIdent").text($(this).attr("data-text"));
-    $(".squareIdent").stop().animate({
-        opacity: 1
-    }, 500);
-}, function(){
-    $(".squareIdent").stop().animate({
-        opacity: 0
-    }, 500);
-});
-
 
 
 

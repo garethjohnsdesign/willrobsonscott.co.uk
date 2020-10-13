@@ -97,22 +97,6 @@
 		"oAP": "/config/project/categoryGroups/typeOfProject--5364c36e-2029-4759-94b6-30b2ed89caf0.yaml",
 		"oF": 0
 		},
-	"/config/project/entryTypes/five--5dfeb8e1-d1f8-4628-9b68-4177d794d320.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/five--5dfeb8e1-d1f8-4628-9b68-4177d794d320.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/four--e825e4d4-5a80-4151-9098-0668fc63e0bd.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/four--e825e4d4-5a80-4151-9098-0668fc63e0bd.yaml",
-		"oF": 0
-		},
 	"/config/project/entryTypes/home--988e0807-e76b-4064-8f2f-905c8828097c.yaml": {
 		"cB": 0,
 		"ft": 8192,
@@ -143,14 +127,6 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/config/project/entryTypes/motion--c5ff3a2b-c1cb-40e5-a694-e79aa2e3b695.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/one--55d11242-1495-47b7-aa2e-6732940dabef.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/one--55d11242-1495-47b7-aa2e-6732940dabef.yaml",
 		"oF": 0
 		},
 	"/config/project/entryTypes/privacyPolicy--c900038a-ee1d-4ba1-afc1-e44173a44418.yaml": {
@@ -185,22 +161,6 @@
 		"oAP": "/config/project/entryTypes/terms--b90c1a49-ccce-4075-8492-a2c3ee7419ec.yaml",
 		"oF": 0
 		},
-	"/config/project/entryTypes/three--9daa6731-d6f0-47cd-9191-86c5d256468d.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/three--9daa6731-d6f0-47cd-9191-86c5d256468d.yaml",
-		"oF": 0
-		},
-	"/config/project/entryTypes/two--284552b0-d138-454a-a471-5f8436aeb0a2.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/entryTypes/two--284552b0-d138-454a-a471-5f8436aeb0a2.yaml",
-		"oF": 0
-		},
 	"/config/project/fieldGroups/04b3b4bb-5a04-4d55-a1fc-39e4312e4e96.yaml": {
 		"cB": 0,
 		"ft": 8192,
@@ -231,14 +191,6 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/config/project/fieldGroups/dfe9b0d4-736b-4fbd-a584-88932d8d56a9.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/agency--fd5300d4-aa13-424f-91e1-76b85c88fc09.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/agency--fd5300d4-aa13-424f-91e1-76b85c88fc09.yaml",
 		"oF": 0
 		},
 	"/config/project/fields/aspectRatio--1c4d0151-1407-47f3-8ac7-11bf44598233.yaml": {
@@ -297,22 +249,6 @@
 		"oAP": "/config/project/fields/domain--96a0b865-b5f2-408f-9fc4-4d8732fb450a.yaml",
 		"oF": 0
 		},
-	"/config/project/fields/dop--c22ebce5-9919-42ad-86cc-88810b8be1cf.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/dop--c22ebce5-9919-42ad-86cc-88810b8be1cf.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/editor--39349375-6291-432c-ab2d-2c0e9051dfec.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/editor--39349375-6291-432c-ab2d-2c0e9051dfec.yaml",
-		"oF": 0
-		},
 	"/config/project/fields/email--9ccc8465-065e-43d4-a80c-3659fb4e3376.yaml": {
 		"cB": 0,
 		"ft": 8192,
@@ -337,22 +273,6 @@
 		"oAP": "/config/project/fields/images--b4c9ab1f-2382-42ed-a624-d4a42f1389a7.yaml",
 		"oF": 0
 		},
-	"/config/project/fields/isOngoing--df6c94dc-dfa9-48d5-9588-b358b9d4c1bc.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/isOngoing--df6c94dc-dfa9-48d5-9588-b358b9d4c1bc.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/label--d9f2606a-c806-452d-84b8-7b3e4b89693f.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/label--d9f2606a-c806-452d-84b8-7b3e4b89693f.yaml",
-		"oF": 0
-		},
 	"/config/project/fields/phoneNumber--e749f839-9bf1-45c4-95a0-85b305edeaa0.yaml": {
 		"cB": 0,
 		"ft": 8192,
@@ -367,22 +287,6 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/config/project/fields/previewVideo--a2a8616b-6624-41af-93a2-0da771d6b113.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/producer--c2409145-6dbd-4286-bf6c-71f0fb4270f5.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/producer--c2409145-6dbd-4286-bf6c-71f0fb4270f5.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/productionCompany--145c06a7-3638-4ae1-80fc-e3ae4fe7c146.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/productionCompany--145c06a7-3638-4ae1-80fc-e3ae4fe7c146.yaml",
 		"oF": 0
 		},
 	"/config/project/fields/projects--372a5521-190d-44d5-83ad-8737b49bdbdd.yaml": {
@@ -433,36 +337,12 @@
 		"oAP": "/config/project/fields/socials--177d26d8-196e-40fa-80c8-8dc29f7a4139.yaml",
 		"oF": 0
 		},
-	"/config/project/fields/typeOfProject--ca491d21-5383-4ba4-a87b-8c3ef8874f23.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/typeOfProject--ca491d21-5383-4ba4-a87b-8c3ef8874f23.yaml",
-		"oF": 0
-		},
 	"/config/project/fields/videos--ecf52723-ca07-490b-9e3d-d118fc43328c.yaml": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/config/project/fields/videos--ecf52723-ca07-490b-9e3d-d118fc43328c.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/vimeo--d7b767e3-b7c2-4a02-a2c2-556c9c92ff1b.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/vimeo--d7b767e3-b7c2-4a02-a2c2-556c9c92ff1b.yaml",
-		"oF": 0
-		},
-	"/config/project/fields/youtube--e5d75705-0cbd-44c0-8042-3353a77a28ab.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/fields/youtube--e5d75705-0cbd-44c0-8042-3353a77a28ab.yaml",
 		"oF": 0
 		},
 	"/config/project/globalSets/seo--a107392e-6bfa-4c3c-aee9-6abe5b17e9e7.yaml": {
@@ -569,22 +449,6 @@
 		"oAP": "/config/project/project.yaml",
 		"oF": 0
 		},
-	"/config/project/sections/five--93fed45e-66c5-4fb1-b37a-ca513f316fb0.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/five--93fed45e-66c5-4fb1-b37a-ca513f316fb0.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/four--568cd6fa-478e-428f-b7ac-aadb96ce228e.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/four--568cd6fa-478e-428f-b7ac-aadb96ce228e.yaml",
-		"oF": 0
-		},
 	"/config/project/sections/home--8ae5cd1b-a7ec-4968-94f8-e41aec2b241d.yaml": {
 		"cB": 0,
 		"ft": 8192,
@@ -607,14 +471,6 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/config/project/sections/motion--01a595ba-d703-4822-bdec-c18431fc75e9.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/one--4f545837-f6b9-429e-833f-2e089698137f.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/one--4f545837-f6b9-429e-833f-2e089698137f.yaml",
 		"oF": 0
 		},
 	"/config/project/sections/privacyPolicy--05857c3a-0daf-412c-a320-780824b26ff5.yaml": {
@@ -647,22 +503,6 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/config/project/sections/terms--bfd43785-517b-421f-b68e-a7411a40fe44.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/three--0ad0aeab-a5ca-4cb5-b0fe-265a01cff036.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/three--0ad0aeab-a5ca-4cb5-b0fe-265a01cff036.yaml",
-		"oF": 0
-		},
-	"/config/project/sections/two--e5ece1ad-6e82-4217-8bb3-d4e43fd39f59.yaml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/config/project/sections/two--e5ece1ad-6e82-4217-8bb3-d4e43fd39f59.yaml",
 		"oF": 0
 		},
 	"/config/project/siteGroups/6ff0064a-f99e-4369-b70b-9dbe09620a22.yaml": {
@@ -798,17 +638,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@popperjs/core/lib/dom-utils/getCompositeRect.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getCompositeRect-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/node_modules/@popperjs/core/lib/dom-utils/getComputedStyle.js": {
 		"bF": 0,
 		"ft": 64,
@@ -853,17 +682,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@popperjs/core/lib/dom-utils/getLayoutRect.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getLayoutRect-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/node_modules/@popperjs/core/lib/dom-utils/getNodeName.js": {
 		"bF": 0,
 		"ft": 64,
@@ -871,17 +689,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getNodeName-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/dom-utils/getNodeScroll.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getNodeScroll-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1018,138 +825,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@popperjs/core/lib/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/min/index-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/applyStyles.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/applyStyles-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/arrow.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/arrow-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/computeStyles.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/computeStyles-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/eventListeners.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/eventListeners-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/flip.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/flip-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/hide.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/hide-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/offset.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/offset-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/popperOffsets.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/popperOffsets-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/modifiers/preventOverflow.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/modifiers/min/preventOverflow-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/popper.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/min/popper-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/computeAutoPlacement.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/computeAutoPlacement-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/node_modules/@popperjs/core/lib/utils/computeOffsets.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1161,28 +836,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@popperjs/core/lib/utils/debounce.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/debounce-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/detectOverflow.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/detectOverflow-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/node_modules/@popperjs/core/lib/utils/expandToHashMap.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1190,28 +843,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/@popperjs/core/lib/utils/min/expandToHashMap-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/format.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/format-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/getAltAxis.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/getAltAxis-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1249,28 +880,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@popperjs/core/lib/utils/getOppositePlacement.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/getOppositePlacement-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/getOppositeVariationPlacement.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/getOppositeVariationPlacement-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/node_modules/@popperjs/core/lib/utils/getVariation.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1278,17 +887,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/@popperjs/core/lib/utils/min/getVariation-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/mergeByName.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/mergeByName-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1304,17 +902,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@popperjs/core/lib/utils/orderModifiers.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/orderModifiers-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/node_modules/@popperjs/core/lib/utils/rectToClientRect.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1322,39 +909,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/@popperjs/core/lib/utils/min/rectToClientRect-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/uniqueBy.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/uniqueBy-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/validateModifiers.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/validateModifiers-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/within.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/within-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1468,6 +1022,14 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"/node_modules/plyr/dist/plyr.min.mjs": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/node_modules/plyr/dist/plyr.min.mjs",
+		"oF": 0
 		},
 	"/node_modules/ssr-window/ssr-window.esm.js": {
 		"bF": 0,
@@ -2261,17 +1823,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/tippy.js/dist/tippy.esm.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/tippy.js/dist/min/tippy.esm-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/package-lock.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -2897,14 +2448,6 @@
 		"oAP": "/templates/default/page/page.twig",
 		"oF": 0
 		},
-	"/templates/default/projects/_types/default.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/default/projects/_types/default.twig",
-		"oF": 0
-		},
 	"/templates/default/projects/_types/motion.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -3461,19 +3004,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/web/assets/css/_variables.css",
-		"oF": 0,
-		"oS": 3,
-		"sct": 0
-		},
-	"/web/assets/scss/_vime.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/web/assets/css/_vime.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 0

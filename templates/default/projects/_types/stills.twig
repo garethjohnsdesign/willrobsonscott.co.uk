@@ -15,22 +15,7 @@
 
 
 {% block navigation %}
-{% import "_macros/isactive" as isactive %}
-
-<!-- Desktop Navigation -->
-<div class="grid-x grid-padding-x grid-padding-y align-justify align-middle navigation" id="swup-header">
-
-  <div class="auto cell align-middle padding-bottom-0">
-    <a href="/" class="">{{ currentSite.name }}</a>
-  </div>
-
-  <div class="shrink cell align-middle padding-bottom-0">
-		<a href="/" class="">Close</a>
-  </div>
-
-</div>
-<!-- End Desktop Navigation -->
-
+{% include "_includes/global/navigation" %}
 {% endblock %}
 
 
@@ -38,12 +23,12 @@
 
 <!-- Carousel -->
 <div class="grid-container">
-  <div class="swiper-container-gallery">
+  <div class="swiper-container swiper--stills">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper" data-aos="fade-in" data-aos-delay="100">
           <!-- Slides -->
           {% for image in entry.images.all() %}
-          <div class="swiper-slide">
+          <div class="swiper-slide" data-caption="{{image.caption}}">
 
 
             <div class="grid-x grid-padding-x align-center">
@@ -54,7 +39,7 @@
                 {% switch image.aspectRatio %}
                 {% case "original" %}
                 <img class="max-viewheight-70" data-interchange="{% include "_includes/images/contained/original/interchange-img-small-12-medium-6" %}">
-                {% if image.caption %}<div class="padding-top-half">{{image.caption}}</div>{% endif %}
+{#                 {% if image.caption %}<div class="padding-top-half">{{image.caption}}</div>{% endif %} #}
                 {% case "1-1" or "5-4" or "5-7" or "6-4" or "7-5" or "16-9" or "3-4" %}
                 <img class="max-viewheight-70" data-interchange="{% include "_includes/images/contained/"~image.aspectRatio~"/interchange-img-small-12-medium-12" %}">
                 {% default %}
@@ -140,8 +125,8 @@
 
   <div class="small-2 cell padding-bottom-0">
     <ul class="menu align-center">
-     <li class="button-prev h3 margin-bottom-0">←</li>
-     <li class="button-next h3 margin-bottom-0">→</li>
+     <li class="button-prev margin-bottom-0">Previous</li>
+     <li class="button-next margin-bottom-0">Next</li>
     </ul>
   </div>
 

@@ -42,32 +42,7 @@
 
           <div class="grid-x grid-padding-x grid-padding-y align-center width-100">
             <div class="small-10 medium-8 cell text-center">
-              <vime-player playsinline>
-                <vime-vimeo video-id="{{ video.video|replace('https://vimeo.com/', '') }}"></vime-vimeo>
-                
-                <vime-default-ui no-controls active-duration="50">
-          
-{#
-                <vime-poster>
-                <div class="overlay-wrapper">
-                <div class="grid-y height-100 align-center">
-                  <div class="shrink cell text-center">
-                  <h3 class="white">{{ video.videoTitle }}</h1>
-                  </div>
-                </div>
-                </div>
-                </vime-poster>
-#}
-          
-                <vime-controls full-width>
-                <vime-playback-control hide-tooltip></vime-playback-control>
-                <vime-volume-control hide-tooltip></vime-volume-control>
-                <vime-control-spacer></vime-control-spacer>
-                <vime-fullscreen-control hide-tooltip></vime-fullscreen-control>
-                </vime-controls>
-                
-                </vime-default-ui>
-              </vime-player>
+              <div id="player" data-plyr-provider="vimeo" data-plyr-embed-id="{{ video.video  }}"></div>
             </div>
           </div>
 
@@ -81,32 +56,7 @@
 <div class="grid-x grid-padding-x grid-padding-y align-center width-100">
     <div class="small-10 medium-8 cell text-center">
 {% for video in entry.videos.all() %}
-      <vime-player playsinline>
-        <vime-vimeo video-id="{{ video.video|replace('https://vimeo.com/', '') }}"></vime-vimeo>
-        
-        <vime-default-ui no-controls active-duration="50">
-  
-{#
-        <vime-poster>
-        <div class="overlay-wrapper">
-        <div class="grid-y height-100 align-center">
-          <div class="shrink cell text-center">
-          <h3 class="white">{{ video.videoTitle }}</h1>
-          </div>
-        </div>
-        </div>
-        </vime-poster>
-#}
-  
-        <vime-controls full-width>
-        <vime-playback-control hide-tooltip></vime-playback-control>
-        <vime-volume-control hide-tooltip></vime-volume-control>
-        <vime-control-spacer></vime-control-spacer>
-        <vime-fullscreen-control hide-tooltip></vime-fullscreen-control>
-        </vime-controls>
-        
-        </vime-default-ui>
-      </vime-player>
+      <div id="player" data-plyr-provider="vimeo" data-plyr-embed-id="{{ video.video }}"></div>
 {% endfor %}
     </div>
   </div>

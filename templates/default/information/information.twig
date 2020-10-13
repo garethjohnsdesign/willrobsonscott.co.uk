@@ -17,31 +17,24 @@
 {% endblock %}
 
 {% block main %}
-
-<!-- Info -->
-<div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y align-center">
-      <div class="small-12 medium-10 large-8 cell">
-        {{ entry.copy }}
-      </div>
-  </div>
-</div>
-<!-- End Info -->
-
 <!-- Contact -->
 <div class="grid-container">
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+<div class="small-12 medium-10 large-8 cell">
+
   <div class="grid-x grid-padding-x grid-padding-y align-center">
     {% for detail in entry.detail.all() %}
-      <div class="small-12 medium-5 large-4 cell detail">
-        <p>{{ detail.header }}</p>
-        {{ detail.copy }}
+      <div class="small-12 medium-6 cell">
+        <p class="dark-gray">{{ detail.header }}</p>
+        {{ detail.copy | markdown }}
       </div>
     {% endfor %}
   </div>
+
+</div>
+</div>
 </div>
 <!-- End Contact  -->
-
-
 {% endblock %}
 
 {% block footer %}
