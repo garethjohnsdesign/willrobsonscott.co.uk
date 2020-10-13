@@ -20,11 +20,11 @@
 <!-- Desktop Navigation -->
 <div class="grid-x grid-padding-x grid-padding-y align-justify align-middle navigation" id="swup-header">
 
-  <div class="auto cell align-middle">
+  <div class="auto cell align-middle padding-bottom-0">
     <a href="/" class="">{{ currentSite.name }}</a>
   </div>
 
-  <div class="shrink cell align-middle">
+  <div class="shrink cell align-middle padding-bottom-0">
 		<a href="/" class="">Close</a>
   </div>
 
@@ -54,7 +54,7 @@
                 {% switch image.aspectRatio %}
                 {% case "original" %}
                 <img class="max-viewheight-70" data-interchange="{% include "_includes/images/contained/original/interchange-img-small-12-medium-6" %}">
-{#                 {% if image.caption %}<div class="padding-top-half">{{image.caption}}</div>{% endif %} #}
+                {% if image.caption %}<div class="padding-top-half">{{image.caption}}</div>{% endif %}
                 {% case "1-1" or "5-4" or "5-7" or "6-4" or "7-5" or "16-9" or "3-4" %}
                 <img class="max-viewheight-70" data-interchange="{% include "_includes/images/contained/"~image.aspectRatio~"/interchange-img-small-12-medium-12" %}">
                 {% default %}

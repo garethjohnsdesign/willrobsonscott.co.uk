@@ -3129,6 +3129,22 @@
 		"oAP": "/web/assets/fonts/century-schoolbook-pro-regular.woff2",
 		"oF": 0
 		},
+	"/web/assets/fonts/gt-alpina-bold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/web/assets/fonts/gt-alpina-bold.woff",
+		"oF": 0
+		},
+	"/web/assets/fonts/gt-alpina-bold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/web/assets/fonts/gt-alpina-bold.woff2",
+		"oF": 0
+		},
 	"/web/assets/fonts/helvetica-now-text.ttf": {
 		"cB": 0,
 		"ft": 8192,
