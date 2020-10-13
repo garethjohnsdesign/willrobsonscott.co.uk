@@ -86,13 +86,12 @@ var stillsSwiper = new Swiper('.swiper--stills', {
 })
 
 $('a[data-slide]').click(function(e){
-  e.preventDefault();
   stillsSwiper.slideTo( $(this).data('slide') );
 })
 
 
 
-var videoGallery = new Swiper('.swiper-container-video', {
+var videoGallery = new Swiper('.swiper--videos', {
   // Optional parameters
   loop: true,
   
@@ -144,30 +143,6 @@ $(function() {
 $(function() {
 window.addEventListener('load', AOS.refresh);
 });
-
-
-
-// 3. Loading
-// ----------
-
-if (!Cookies.get('loading')) {
-  $(function() {
-    $(".loader").removeClass("hide");
-    $(".loader").addClass("loading");
-    $('.page--testing').removeClass('testing--hide');
-    setTimeout(function(){
-     $(".loader").addClass("loaded");
-     Cookies.set('loading', 'true');
-    }, 2500);
-  });
-
-} else { 
-  setTimeout(function(){
-  $('.page--testing').removeClass('testing--hide');
-  }, 500);
-
-}
-
 
 
 }

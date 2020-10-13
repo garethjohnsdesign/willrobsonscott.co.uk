@@ -82,36 +82,36 @@
 {% if entry.copy|length %}
 <div class="full reveal" id="reveal{{entry.id}}" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
 
-  <div class="grid-y align-center height-100">
-    <div class="shrink cell">
+  <div class="grid-x align-center-middle" style="min-height: 100%">
+    <div class="small-12 cell">
+
       <div class="grid-x grid-padding-x grid-padding-y grid-margin-y align-center">
-        <div class="small-8 cell">
+        <div class="small-12 medium-8 cell">
+
         <div class="padding-vertical-1">
         {{entry.copy}}
         </div>
+        <a class="dark-gray" data-close aria-label="Close modal" type="button">Close</a>
+
         </div>
       </div>
+
     </div>
   </div>
-
-  <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">Close</span>
-  </button>
 
 </div>
 {% endif %}
 <!-- End Credits -->
-
 
 {% endblock %}
 
 
 {% block footer %}
 <div class="grid-x grid-padding-x grid-padding-y align-justify">
-  <div class="auto medium-5 cell">
+  <div class="small-shrink large-4 cell">
     <ul class="menu">
      <li class="menu-text">{{entry.title}}</li>
-     <li class="menu-text link" data-open="grid-reveal{{entry.id}}">Thumbnails</a></li>
+     <li class="menu-text link show-for-medium" data-open="grid-reveal{{entry.id}}">Thumbnails</a></li>
      <li class="menu-text gallery-pagination"></li>
      {% if entry.copy|length %}
      <li>
@@ -123,14 +123,14 @@
     </ul>
   </div>
 
-  <div class="small-2 cell padding-bottom-0">
+  <div class="small-shrink large-4 cell padding-bottom-0 show-for-large">
     <ul class="menu align-center">
-     <li class="button-prev margin-bottom-0">Previous</li>
-     <li class="button-next margin-bottom-0">Next</li>
+     <li class="menu-text button-prev margin-bottom-0 padding-left-0">Prev</li>
+     <li class="menu-text button-next margin-bottom-0 padding-right-0">Next</li>
     </ul>
   </div>
 
-  <div class="small-5 cell show-for-large">
+  <div class="small-shrink large-4 cell show-for-large">
     <ul class="menu align-right">
       {% if nextEntry %}
       <li>

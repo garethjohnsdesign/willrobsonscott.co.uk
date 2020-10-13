@@ -101,8 +101,7 @@ $body-font-color: $black;
 $body-font-family: $serif-regular;
 $body-antialiased: true;
 $global-margin: 1rem;
-// $global-padding: 1rem;
-$global-padding: 1.5rem;
+$global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
@@ -851,8 +850,8 @@ $reveal-background: $white;
 $reveal-background: rgba($white, 0.95);
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
-$reveal-padding: $global-padding;
-$reveal-padding: 0;
+// $reveal-padding: $global-padding;
+$reveal-padding: 0rem;
 $reveal-border: 1px solid $medium-gray;
 $reveal-radius: $global-radius;
 // $reveal-zindex: 1005;
@@ -988,7 +987,7 @@ $grid-margin-gutters: (
 );
 */
 $grid-margin-gutters: (
-  small: 32px,
+  small: 48px,
   medium: 48px,
   large: 48px,
   xlarge: 72px,

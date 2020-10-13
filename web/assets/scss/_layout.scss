@@ -60,6 +60,10 @@
 // 2. Global
 // ---------
 
+a:focus {
+color: $black;
+}
+
 .menu .menu-text {
 font-weight: normal;
 }
@@ -462,13 +466,6 @@ opacity: 0;
   overflow: hidden;
 }
 
-
-.reveal {
-  @include breakpoint(medium down) {
-  @include padding(1, 1, 1, 1);
-  }
-  @include padding(2, 2, 2, 2);
-}
 
 .border-bottom {
   border-bottom: 1px solid $dark-gray
@@ -912,4 +909,27 @@ overflow: visible;
 
 .active {
   color: $dark-gray;
+}
+
+
+.plyr--full-ui input[type=range] {
+  color: $dark-gray;
+}
+
+.plyr__control--overlaid {
+  background: rgba($black, .0);
+}
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded=true] {
+  background: $dark-gray;
+}
+
+.plyr__control.plyr__tab-focus {
+  box-shadow: 0 0 0 5px rgba($dark-gray, .5);
+}
+
+.plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
+  background: $dark-gray;
 }

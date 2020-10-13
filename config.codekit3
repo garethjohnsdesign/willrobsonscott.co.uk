@@ -605,17 +605,6 @@
 		"oAP": "/build/node_modules",
 		"oF": 0
 		},
-	"/node_modules/@popperjs/core/lib/dom-utils/contains.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/contains-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/node_modules/@popperjs/core/lib/dom-utils/getBoundingClientRect.js": {
 		"bF": 0,
 		"ft": 64,
@@ -623,17 +612,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getBoundingClientRect-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/dom-utils/getClippingRect.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getClippingRect-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -660,28 +638,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@popperjs/core/lib/dom-utils/getDocumentRect.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getDocumentRect-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/dom-utils/getHTMLElementScroll.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getHTMLElementScroll-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/node_modules/@popperjs/core/lib/dom-utils/getNodeName.js": {
 		"bF": 0,
 		"ft": 64,
@@ -689,17 +645,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getNodeName-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/dom-utils/getOffsetParent.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getOffsetParent-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -722,17 +667,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getScrollParent-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/dom-utils/getViewportRect.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/getViewportRect-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -803,17 +737,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/@popperjs/core/lib/dom-utils/listScrollParents.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/dom-utils/min/listScrollParents-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/node_modules/@popperjs/core/lib/enums.js": {
 		"bF": 0,
 		"ft": 64,
@@ -821,94 +744,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/@popperjs/core/lib/min/enums-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/computeOffsets.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/computeOffsets-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/expandToHashMap.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/expandToHashMap-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/getBasePlacement.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/getBasePlacement-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/getFreshSideObject.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/getFreshSideObject-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/getMainAxisFromPlacement.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/getMainAxisFromPlacement-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/getVariation.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/getVariation-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/mergePaddingObject.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/mergePaddingObject-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/node_modules/@popperjs/core/lib/utils/rectToClientRect.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/@popperjs/core/lib/utils/min/rectToClientRect-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1920,14 +1755,6 @@
 		"oAP": "/templates/default/_includes/global/head.twig",
 		"oF": 0
 		},
-	"/templates/default/_includes/global/loading.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/default/_includes/global/loading.twig",
-		"oF": 0
-		},
 	"/templates/default/_includes/global/navigation.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -1942,14 +1769,6 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/templates/default/_includes/global/scripts.twig",
-		"oF": 0
-		},
-	"/templates/default/_includes/global/socials.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/default/_includes/global/socials.twig",
 		"oF": 0
 		},
 	"/templates/default/_includes/images/contained/1-1/interchange-img-small-12-medium-12.twig": {

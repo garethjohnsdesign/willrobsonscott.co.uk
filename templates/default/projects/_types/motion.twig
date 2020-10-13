@@ -15,33 +15,21 @@
 
 
 {% block navigation %}
-<!-- Desktop Navigation -->
-<div class="grid-x grid-padding-x grid-padding-y align-justify align-middle navigation" id="swup-header">
-
-  <div class="auto cell align-middle">
-    <a href="/" class="">{{ currentSite.name }}</a>
-  </div>
-
-  <div class="shrink cell align-middle">
-		<a href="/" class="">Close</a>
-  </div>
-
-</div>
-<!-- End Desktop Navigation -->
+{% include "_includes/global/navigation" %}
 {% endblock %}
 
 
 {% block main %}
 {% if entry.videos|length > 1 %}
 <div class="grid-container">
-  <div class="swiper-container-video">
+  <div class="swiper-container swiper--videos">
     <div class="swiper-wrapper">
         <!-- Slides -->
         {% for video in entry.videos.all() %}
         <div class="swiper-slide">
 
-          <div class="grid-x grid-padding-x grid-padding-y align-center width-100">
-            <div class="small-10 medium-8 cell text-center">
+          <div class="grid-x grid-padding-x grid-padding-y align-center">
+            <div class="small-12 medium-8 cell text-center">
               <div id="player" data-plyr-provider="vimeo" data-plyr-embed-id="{{ video.video  }}"></div>
             </div>
           </div>
@@ -53,11 +41,11 @@
 </div>
 {% else %}
 <div class="grid-container">
-<div class="grid-x grid-padding-x grid-padding-y align-center width-100">
-    <div class="small-10 medium-8 cell text-center">
-{% for video in entry.videos.all() %}
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-8 cell text-center">
+    {% for video in entry.videos.all() %}
       <div id="player" data-plyr-provider="vimeo" data-plyr-embed-id="{{ video.video }}"></div>
-{% endfor %}
+    {% endfor %}
     </div>
   </div>
 </div>
@@ -68,10 +56,10 @@
 <div class="full reveal" id="reveal{{entry.id}}" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
 
   <div class="grid-x align-center-middle" style="min-height: 100%">
-    <div class="small-12 cell padding-vertical-3">
+    <div class="small-12 cell">
 
       <div class="grid-x grid-padding-x grid-padding-y grid-margin-y align-center">
-        <div class="small-8 cell text-center">
+        <div class="small-12 medium-8 cell">
 
         <div class="padding-vertical-1">
         {{entry.copy}}
@@ -91,12 +79,10 @@
 
 {% block footer %}
 <div class="grid-x grid-padding-x grid-padding-y align-justify">
-  <div class="small-4 cell">
+  <div class="shrink cell">
     <ul class="menu">
      <li class="menu-text">{{entry.title}}</li>
-     {% if entry.videos|length > 1 %}
-     <li class="menu-text gallery-pagination"></li>
-     {% endif %}
+     <li class="menu-text gallery-pagination show-for-medium"></li>
      {% if entry.copy|length %}
      <li>
       <a data-open="reveal{{entry.id}}">
@@ -107,16 +93,7 @@
     </ul>
   </div>
 
-  {% if entry.videos|length > 1 %}
-    <div class="small-4 cell">
-      <ul class="menu align-center">
-       <li class="button-prev h3 margin-bottom-0">←</li>
-       <li class="button-next h3 margin-bottom-0">→</li>
-      </ul>
-    </div>
-  {% endif %}
-
-  <div class="small-4 cell">
+  <div class="small-5 medium-auto cell show-for-large">
     <ul class="menu align-right">
       {% if nextEntry %}
       <li>

@@ -3,20 +3,21 @@
 <!-- Desktop Navigation -->
 <div class="grid-x grid-padding-x grid-padding-y align-justify align-middle navigation" id="swup-header">
 
-  <div class="shrink cell align-middle">
+  <div class="shrink medium-4 cell align-middle">
     <a href="/" class="">{{ currentSite.name }}</a>
   </div>
 
   <div class="shrink cell align-middle">
     {% set uriSegment = craft.app.request.getSegment(1) %}
     <ul class="menu align-center">
-    <li><a {% if uriSegment == "" %}class="active"{% endif %} href="/">All</a></li>
+    <li class="hide-for-small-only"><a {% if uriSegment == "" %}class="active"{% endif %} href="/">All</a></li>
     <li><a {% if uriSegment == "stills" %}class="active"{% endif %} href="/stills">Stills</a></li>
     <li><a {% if uriSegment == "motion" %}class="active"{% endif %} href="/motion">Motion</a></li>
+    <li class="hide-for-large"><a class="padding-right-0{% if uriSegment == "information" %} active{% endif %}" href="/information" class="">Info</a></li>
     </ul>
   </div>
 
-  <div class="shrink cell align-middle">
+  <div class="shrink medium-4 cell align-middle show-for-large text-right">
 		<a {% if uriSegment == "information" %}class="active"{% endif %} href="/information" class="">Information</a>
   </div>
 
