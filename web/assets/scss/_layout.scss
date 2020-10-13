@@ -240,6 +240,10 @@ p a {
   }
 }
 
+.italic {
+ font-style: italic;
+}
+
 .logo {
   font-family: $logo;
 }
@@ -430,10 +434,6 @@ url('/assets/img/arrow-left@3x.png') 3x
 
 .footer .menu li:last-child a {
   padding-right: 0;
-}
-
-.active {
-  color: $primary-color !important;
 }
 
 .hamburger-inner--active {
@@ -696,6 +696,9 @@ div.#{$hamburger-class-name} {
 .max-viewheight-66 {
   max-height: 66.6vh;
 }
+.max-viewheight-70 {
+  max-height: 70vh;
+}
 
 .max-viewheight-75 {
   max-height: 75vh;
@@ -897,7 +900,7 @@ overflow: visible;
 .video--background {
   min-width: 100%; 
   min-height: 100%;
-//   max-width: 100%;
+  max-width: 100%;
   width: auto;
   height: auto;
   position: absolute;
@@ -905,4 +908,8 @@ overflow: visible;
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: -1;
+}
+
+.active {
+  color: $dark-gray;
 }

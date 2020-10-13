@@ -1,5 +1,4 @@
 {% extends "default/_layouts/base" %}
-
 {% import "_macros/isactive" as isactive %}
 
 {% block body %}
@@ -8,20 +7,17 @@
 {% include "_includes/global/loading" %}
 <!-- End Loading -->
 
+
 <div class="off-canvas-wrapper">
 <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-transition="push" data-auto-focus="false" data-close-on-click="false" data-content-overlay="false">
   <div class="grid-x grid-padding-x grid-padding-y padding-bottom-0 align-justify align-middle">
   <div class="shrink cell align-middle padding-bottom-0">
-  		<ul class="menu vertical">
-      {% set categoryQuery = craft.categories().group('typeOfProject') %}
-      {% set categories = categoryQuery.all() %}
-      {% nav category in categories %}
-      <li{{ isactive.isActive(category.slug) }}>
-      <a href="{{ category.url }}" data-toggle="menuBar offCanvasRight">{{ category.title }}</a>
-      </li>
-      {% endnav %}
-      <li {{ isactive.isActive('contact') }} data-toggle="menuBar offCanvasRight"><a href="/contact">Contact</a></li>
-      </ul>
+    {% set uriSegment = craft.app.request.getSegment(1) %}
+    <ul class="menu align-center">
+    <li><a {% if uriSegment == "" %}class="active"{% endif %} href="/">All</a></li>
+    <li><a {% if uriSegment == "stills" %}class="active"{% endif %} href="/stills">Stills</a></li>
+    <li><a {% if uriSegment == "motion" %}class="active"{% endif %} href="/motion">Motion</a></li>
+    </ul>
   </div>
   </div>
 </div>

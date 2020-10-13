@@ -1,5 +1,5 @@
 fieldLayouts:
-  4974beb7-fd38-497f-be7f-dee2f518bb50:
+  8b5a0d3b-f033-4a13-867c-4d4d6608dafe:
     tabs:
       -
         elements:
@@ -27,34 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 04ab3c60-f325-48ea-bf96-347befb870e0
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: a2a8616b-6624-41af-93a2-0da771d6b113
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: ecf52723-ca07-490b-9e3d-d118fc43328c
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: cc7a7777-17c5-45ef-829d-9b277cb85134
+            fieldUid: 372a5521-190d-44d5-83ad-8737b49bdbdd
             instructions: null
             label: null
             required: false
@@ -64,11 +37,42 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: video
-hasTitleField: true
-name: Video
-section: 32174234-e8c3-40d4-9725-77ff2bd2366a
-sortOrder: 3
-titleFormat: null
+      -
+        elements:
+          -
+            fieldUid: dfb201c1-5d86-40c2-8ef8-8a447a607828
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fe83906d-6f96-4f77-9151-41326628a78d
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1abe3543-0a12-4298-ad7d-1a93ca2d280c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: SEO
+        sortOrder: 2
+handle: stills
+hasTitleField: false
+name: Stills
+section: 24a690f0-f706-4e2c-9c70-2d42b812b6e2
+sortOrder: 1
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
