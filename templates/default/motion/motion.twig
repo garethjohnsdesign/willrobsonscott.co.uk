@@ -43,13 +43,15 @@
   <a href="{{ project.url }}" class="square" data-text="{{ project.title }}">
   <div class="light-gray-background-color excerpt">
       {% if project.type == 'motion' %}
-      <div class="image--16-9" data-aos="fade-in" data-aos-delay="100">
+      <div class="image--16-9" data-interchange="{% if image | length %}{% include "_includes/images/full/16-9/interchange-img-small-12-medium-6" %}{% endif %}" data-aos="fade-in">
       {% if project.previewVideo | length %}
-      <video muted loop class="video--background" src="{{ project.previewVideo }}" type="video/mp4"></video>
+      <video muted loop class="video--background show-for-medium">
+        <source data-src="{{ project.previewVideo }}" type="video/mp4">
+      </video>
       {% endif %}
       </div>
       {% else %} 
-      <img class="max-viewheight-75" data-interchange="{% include "_includes/images/contained/original/interchange-img-small-12-medium-4" %}">
+      <img class="max-viewheight-75" loading="lazy" data-interchange="{% include "_includes/images/contained/original/interchange-img-small-12-medium-4" %}">
       {% endif %}
   </div>
   <div class="grid-x align-justify padding-top-1">

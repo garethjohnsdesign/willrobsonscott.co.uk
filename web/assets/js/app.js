@@ -44,27 +44,16 @@ videos.forEach(video => {
   this.pause()
   })
 
-  video.addEventListener("touchstart", function () {
-  this.play()
-  })
-
-  video.addEventListener("touchend", function () {
-  this.pause()
-  })
-
 })
 
-/*
 $(function() {
   $("video.video--background source").each(function() {
     var sourceFile = $(this).attr("data-src");
     $(this).attr("src", sourceFile);
     var video = this.parentElement;
     video.load();
-    video.play();
   });
 });
-*/
 
 // 4. Plyr
 // ----------
