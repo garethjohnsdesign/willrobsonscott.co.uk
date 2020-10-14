@@ -10,7 +10,7 @@
   <div class="shrink cell align-middle">
     {% set uriSegment = craft.app.request.getSegment(1) %}
     <ul class="menu align-center">
-    <li class="hide-for-small-only"><a {% if uriSegment == "" %}class="active"{% endif %} href="/">All</a></li>
+{#     <li class="hide-for-small-only"><a {% if uriSegment == "" %}class="active"{% endif %} href="/">Featured</a></li> #}
     <li><a {% if uriSegment == "stills" %}class="active"{% endif %} href="/stills">Stills</a></li>
     <li><a {% if uriSegment == "motion" %}class="active"{% endif %} href="/motion">Motion</a></li>
     <li class="hide-for-large"><a class="padding-right-0{% if uriSegment == "information" %} active{% endif %}" href="/information" class="">Info</a></li>

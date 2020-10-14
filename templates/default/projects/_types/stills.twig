@@ -5,7 +5,15 @@
 .section('projects')
 %}
 
-{% set title = entry.title %}
+{% if entry.seoTitle | length %}
+{% set seoTitle = entry.seoTitle %}
+{% else %}
+{% set seoTitle = entry.title %}
+{% endif %}
+
+{% if entry.seoDescription | length %}
+{% set seoDescription = entry.seoDescription %}
+{% endif %}
 
 {# Get the prev/next elements #}
 {% set prevEntry = entry.getPrev(params) %}
@@ -38,12 +46,12 @@
               <div class="shrink cell">
                 {% switch image.aspectRatio %}
                 {% case "original" %}
-                <img class="max-viewheight-70" data-interchange="{% include "_includes/images/contained/original/interchange-img-small-12-medium-6" %}">
-{#                 {% if image.caption %}<div class="padding-top-half">{{image.caption}}</div>{% endif %} #}
+                <img class="max-viewheight-66" data-interchange="{% include "_includes/images/contained/original/interchange-img-small-12-medium-6" %}">
+                {% if image.caption %}<div class="padding-top-half">{{image.caption}}</div>{% endif %}
                 {% case "1-1" or "5-4" or "5-7" or "6-4" or "7-5" or "16-9" or "3-4" %}
-                <img class="max-viewheight-70" data-interchange="{% include "_includes/images/contained/"~image.aspectRatio~"/interchange-img-small-12-medium-12" %}">
+                <img class="max-viewheight-66" data-interchange="{% include "_includes/images/contained/"~image.aspectRatio~"/interchange-img-small-12-medium-12" %}">
                 {% default %}
-                <img class="max-viewheight-70" data-interchange="{% include "_includes/images/contained/7-5/interchange-img-small-12-medium-12" %}">
+                <img class="max-viewheight-66" data-interchange="{% include "_includes/images/contained/7-5/interchange-img-small-12-medium-12" %}">
                 {% endswitch %}
               </div>
             </div>
@@ -108,7 +116,7 @@
 
 {% block footer %}
 <div class="grid-x grid-padding-x grid-padding-y align-justify">
-  <div class="small-shrink large-4 cell">
+  <div class="shrink large-4 cell">
     <ul class="menu">
      <li class="menu-text">{{entry.title}}</li>
      <li class="menu-text link show-for-medium" data-open="grid-reveal{{entry.id}}">Thumbnails</a></li>
@@ -123,19 +131,19 @@
     </ul>
   </div>
 
-  <div class="small-shrink large-4 cell padding-bottom-0 show-for-large">
+  <div class="shrink large-4 cell padding-bottom-0 show-for-large">
     <ul class="menu align-center">
      <li class="menu-text button-prev margin-bottom-0 padding-left-0">Prev</li>
      <li class="menu-text button-next margin-bottom-0 padding-right-0">Next</li>
     </ul>
   </div>
 
-  <div class="small-shrink large-4 cell show-for-large">
+  <div class="shrink large-4 cell">
     <ul class="menu align-right">
       {% if nextEntry %}
       <li>
-      <a href="{{ nextEntry.url }}">
-        <div>Next Project</div>
+      <a href="{{ nextEntry.url }}" class="padding-right-0">
+        Next Project
       </a>
       </li>
       {% endif %}

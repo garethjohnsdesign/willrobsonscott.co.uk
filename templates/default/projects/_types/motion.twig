@@ -5,7 +5,15 @@
 .section('projects')
 .orderBy('postDate desc') %}
 
-{% set title = entry.title %}
+{% if entry.seoTitle | length %}
+{% set seoTitle = entry.seoTitle %}
+{% else %}
+{% set seoTitle = entry.title %}
+{% endif %}
+
+{% if entry.seoDescription | length %}
+{% set seoDescription = entry.seoDescription %}
+{% endif %}
 
 {# Get the prev/next elements #}
 {% set prevEntry = entry.getPrev(params) %}
@@ -93,17 +101,18 @@
     </ul>
   </div>
 
-  <div class="small-5 medium-auto cell show-for-large">
+  <div class="shrink large-4 cell">
     <ul class="menu align-right">
       {% if nextEntry %}
       <li>
-      <a href="{{ nextEntry.url }}">
-        <div>Next Project</div>
+      <a href="{{ nextEntry.url }}" class="padding-right-0">
+        Next Project
       </a>
       </li>
       {% endif %}
     </ul>
   </div>
+
 
 </div>
 {% endblock %}
