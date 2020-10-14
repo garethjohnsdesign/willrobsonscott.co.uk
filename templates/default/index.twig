@@ -29,7 +29,7 @@
         {% set project = block.project.one() %}
 
 {% if project | length %}
-<div class="grid-y padding-2 align-center" style="height: 100%;" data-aos="fade-in">
+<div class="grid-y grid-padding-y padding-1 align-center" style="height: 100%;" data-aos="fade-in">
 <div class="shrink cell">
 
 <div class="grid-x grid-padding-x grid-padding-y align-center">
@@ -38,19 +38,21 @@
 
 
 
-  {% if project.previewVideo | length %}
+
   {% set image = project.image.one() %}
   <a href="{{ project.url }}" class="square" data-text="{{ project.title }}">
   <div class="light-gray-background-color excerpt">
-    <div class="image--16-9" data-interchange="{% if image | length %}{% include "_includes/images/full/16-9/interchange-img-small-12-medium-6" %}{% endif %}" data-aos="fade-in" data-aos-delay="100">
-    
-
-
+      {% if project.type == 'motion' %}
+      <div class="image--16-9" data-interchange="{% if image | length %}{% include "_includes/images/full/16-9/interchange-img-small-12-medium-6" %}{% endif %}" data-aos="fade-in" data-aos-delay="100">
+      {% if project.previewVideo | length %}
       <video autoplay muted loop class="video--background" poster="">
         <source data-src="{{ project.previewVideo }}" type="video/mp4">
       </video>
-
-    </div>
+      {% endif %}
+      </div>
+      {% else %} 
+      <img class="max-viewheight-75" data-interchange="{% include "_includes/images/contained/original/interchange-img-small-12-medium-4" %}">
+      {% endif %}
   </div>
   <div class="grid-x align-justify padding-top-1">
     <div class="auto cell">
@@ -58,22 +60,7 @@
     </div>
   </div>
   </a>
-  {% else %}
 
-      <a href="{{ project.url }}" class="square" data-text="{{ project.title }}">
-        {% set image = project.image.one() %}
-        <div class="excerpt">
-        {% if image | length %}
-        <img class="max-viewheight-75" data-interchange="{% include "_includes/images/contained/original/interchange-img-small-12-medium-4" %}">
-        {% endif %}
-        </div>
-        <div class="grid-x align-justify padding-top-1">
-          <div class="auto cell">
-          <div class="project--title">{{project.title}}</div>
-          </div>
-        </div>
-      </a>
-  {% endif %}
 
   </div>
 </div>
