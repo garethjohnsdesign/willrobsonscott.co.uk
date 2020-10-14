@@ -30,9 +30,31 @@ $(document).foundation();
 
 
 
-// 3. Loading
+// 3. Video
 // ----------
 
+const videos = document.querySelectorAll("video")
+
+videos.forEach(video => {
+  video.addEventListener("mouseover", function () {
+  this.play()
+  })
+
+  video.addEventListener("mouseout", function () {
+  this.pause()
+  })
+
+  video.addEventListener("touchstart", function () {
+  this.play()
+  })
+
+  video.addEventListener("touchend", function () {
+  this.pause()
+  })
+
+})
+
+/*
 $(function() {
   $("video.video--background source").each(function() {
     var sourceFile = $(this).attr("data-src");
@@ -42,6 +64,7 @@ $(function() {
     video.play();
   });
 });
+*/
 
 // 4. Plyr
 // ----------
