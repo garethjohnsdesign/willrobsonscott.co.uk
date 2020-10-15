@@ -46,6 +46,7 @@ videos.forEach(video => {
 
 })
 
+/*
 $(function() {
   $("video.video--background source").each(function() {
     var sourceFile = $(this).attr("data-src");
@@ -54,6 +55,7 @@ $(function() {
     video.load();
   });
 });
+*/
 
 // 4. Plyr
 // ----------
