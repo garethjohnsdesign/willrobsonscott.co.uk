@@ -20,16 +20,6 @@
   }
 }
 
-@mixin hamburger-bar() {
-    background-color: $hamburger-color;
-    border-radius: $hamburger-bar-border-radius;
-    content: '';
-    display: block;
-    height: $hamburger-thickness;
-    position: absolute;
-    width: 100%;
-}
-
 @mixin aspect-ratio($width, $height) {
   position: relative;
   &:before {
@@ -374,56 +364,6 @@ p a {
 }
 
 
-// 6. Navigation
-// -------------
-
-// 9. Home
-// -------
-
-.off-canvas .menu .active > a {
-  background: transparent;
-  color: $black;
-}
-
-.swiper-button-prev-test,
-.swiper-button-next-test {
-  position: absolute;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  z-index: 0;
-}
-
-.swiper-button-prev-test {
-  left: 0rem;
-  right: auto;
-}
-.swiper-button-next-test {
-  right: 0rem;
-  left: auto;
-}
-
-.swiper-button-prev-test {
-cursor: w-resize;
-cursor: url('/assets/img/arrow-left.png') 16 16, auto !important;
-cursor: -webkit-image-set(
-url('/assets/img/arrow-left.png') 1x,
-url('/assets/img/arrow-left@2x.png') 2x,
-url('/assets/img/arrow-left@3x.png') 3x
-) 16 16, auto !important;
-}
-
-.swiper-button-next-test {
-  cursor: e-resize;
-  cursor: url('/assets/img/arrow-right.png') 16 16, auto !important;
-  cursor: -webkit-image-set(
-  url('/assets/img/arrow-right.png') 1x,
-  url('/assets/img/arrow-right@2x.png') 2x,
-  url('/assets/img/arrow-right@3x.png') 3x
-  ) 16 16, auto !important;
-}
-
-
 .excerpt {
   .content {
     @include opacity(1);
@@ -441,20 +381,6 @@ url('/assets/img/arrow-left@3x.png') 3x
   padding-right: 0;
 }
 */
-
-.hamburger-inner--active {
-  .hamburger-inner {
-    &,
-    &::before,
-    &::after {
-      background-color: $primary-color !important;
-    }
-  }
-}
-
-.testing {
- transform: scale(1.04);
-}
 
 .testing--hide {
 opacity: 0;
@@ -646,36 +572,6 @@ z-index: -1;
 }
 
 
-
-
-$hamburger-color: $white;
-$hamburger-color-hover: $white;
-$hamburger-color-active: $white;
-
-@mixin hamburger-bar() {
-    background-color: $hamburger-color;
-    border-radius: $hamburger-bar-border-radius;
-    content: '';
-    display: block;
-    height: $hamburger-thickness;
-    position: absolute;
-    width: 100%;
-}
-
-button.#{$hamburger-class-name} {
-    height: $hamburger-size;
-    width: $hamburger-size;    
-}
-
-div.#{$hamburger-class-name} {
-    height: $hamburger-size - ($hamburger-border-width * 2);
-    width: $hamburger-size - ($hamburger-border-width * 2);
-
-    > .inner {
-        top: 50%;
-    }   
-}
-
 .min-viewheight-50 {
   min-height: 50vh;
 }
@@ -767,59 +663,6 @@ background-color: rgba(255,255,255,.05);
 pointer-events: none;
 }
 
-.ghost {
-    font-size:0
-}
-
-.ghost:before {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    margin-left: -1px;
-    vertical-align: middle;
-    width:1px
-}
-
-.ghost__child {
-    display: inline-block;
-    vertical-align:middle
-}
-
-
-
-@function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
-}
-
-@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
-  $u1: unit($min-vw);
-  $u2: unit($max-vw);
-  $u3: unit($min-font-size);
-  $u4: unit($max-font-size);
-
-  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
-    & {
-      font-size: $min-font-size;
-      @media screen and (min-width: $min-vw) {
-        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
-      }
-      @media screen and (min-width: $max-vw) {
-        font-size: $max-font-size;
-      }
-    }
-  }
-}
-
-
-$min_width: 320px;
-$max_width: 1200px;
-$min_font: 16px;
-$max_font: 72px;
-
-
-h1 {
-  @include fluid-type($min_width, $max_width, $min_font, $max_font);
-}
 
 .swiper-slide {
   height: auto;
@@ -837,58 +680,6 @@ left: 0;
 width: 100%;
 height: 100%;
 background: rgba($black, 0.25);
-}
-
-.five {
-  @include breakpoint(medium) {
-  overflow: visible;
-  a {
-    color: $white;
-    transition: $primary-transition;
-    &:hover {
-      color: $black;   
-    }
-  }
-}
-}
-
-
-.five .excerpt {
-  @include breakpoint(medium) {
-overflow: visible;
-}
-}
-
-.five img {
-  @include breakpoint(medium) {
-    width: 100%;
-    height: auto;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-}
-
-.five a:hover img {
-  @include breakpoint(medium) {
-    -webkit-transform: translate3d(0, -8px, 0);
-    transform: translate3d(0, -8px, 0);
-}
-}
-
-.six {
-  @include breakpoint(medium) {
-  a {
-    color: $white;
-    transition: $primary-transition;
-    &:hover {
-      color: $black;   
-    }
-  }
-}
 }
 
 
