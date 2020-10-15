@@ -48,7 +48,7 @@
 
   {% set image = project.image.one() %}
   <a href="{{ project.url }}" class="square" data-text="{{ project.title }}">
-  <div class="light-gray-background-color excerpt">
+  <div class="excerpt">
       {% if project.type == 'motion' %}
 
       {% if project.overrideImage|length  %}
