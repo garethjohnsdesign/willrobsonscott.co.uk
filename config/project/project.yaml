@@ -1,9 +1,9 @@
 assets:
   tempVolumeUid: 244f7440-a428-4998-8c23-00991784b369
-dateModified: 1602619760
+dateModified: 1602759305
 email:
   fromEmail: info@garethjohnsdesign.com
-  fromName: 'Aoife McArdle'
+  fromName: 'Will Robson-Scott'
   replyToEmail: null
   template: null
   transportSettings:
@@ -22,10 +22,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  feed-me:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.1.2
   field-manager:
     edition: standard
     enabled: true

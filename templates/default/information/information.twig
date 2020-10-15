@@ -29,6 +29,19 @@
         {{ detail.copy | markdown }}
       </div>
     {% endfor %}
+
+    {% set books = craft.entries
+    .section('books')
+    .all() %}
+
+
+      <div class="small-12 medium-6 cell">
+      <p class="dark-gray">Books</p>
+        {% for book in books %}
+        <div><a href="{{book.url}}">{{ book.title }}, {{ book.publicationDate |date('Y') }}</a></div>
+        {% endfor %}
+      </div>
+
   </div>
 
 </div>

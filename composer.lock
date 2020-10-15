@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41b55ef4c9bcfc35528969b38a455a4d",
+    "content-hash": "fc37f0b78569905b69c2bd1c2b58b5fb",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -681,65 +681,6 @@
             "time": "2020-10-02T21:21:05+00:00"
         },
         {
-            "name": "craftcms/feed-me",
-            "version": "4.2.4",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/feed-me/zipball/ee05230d433761e1f11f6505d12f05662b7936bd",
-                "reference": "ee05230d433761e1f11f6505d12f05662b7936bd",
-                "shasum": ""
-            },
-            "require": {
-                "cakephp/utility": "^3.3.12",
-                "craftcms/cms": "^3.4.0",
-                "jakeasmith/http_build_url": "^1.0",
-                "league/csv": "^8.2 || ^9.0",
-                "nesbot/carbon": "^1.22 || ^2.10",
-                "ralouphie/mimey": "^1.0",
-                "seld/jsonlint": "^1.7"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Feed Me",
-                "handle": "feed-me",
-                "documentationUrl": "https://docs.craftcms.com/feed-me/v4/"
-            },
-            "autoload": {
-                "psr-4": {
-                    "craft\\feedme\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Pixel & Tonic",
-                    "homepage": "https://pixelandtonic.com/"
-                },
-                {
-                    "name": "Verbb",
-                    "homepage": "https://verbb.io"
-                }
-            ],
-            "description": "Import content from XML, RSS, CSV or JSON feeds into entries, categories, Craft Commerce products, and more.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "feed me"
-            ],
-            "support": {
-                "email": "support@craftcms.com",
-                "issues": "https://github.com/craftcms/feed-me/issues?state=open",
-                "source": "https://github.com/craftcms/feed-me",
-                "docs": "https://docs.craftcms.com/feed-me/v4/",
-                "rss": "https://github.com/craftcms/feed-me/commits/master.atom"
-            },
-            "time": "2020-10-01T21:44:08+00:00"
-        },
-        {
             "name": "craftcms/google-cloud",
             "version": "1.4.0",
             "dist": {
@@ -878,11 +819,11 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.8.1",
+            "version": "2.8.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/2fff5171f89538e84921119e8af533e6379ad24b",
-                "reference": "2fff5171f89538e84921119e8af533e6379ad24b",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/d9758847fcdd5b26ed238cfdee3eab707edb0faa",
+                "reference": "d9758847fcdd5b26ed238cfdee3eab707edb0faa",
                 "shasum": ""
             },
             "require": {
@@ -923,7 +864,7 @@
                 "docs": "https://github.com/craftcms/redactor/blob/v2/README.md",
                 "rss": "https://github.com/craftcms/redactor/commits/v2.atom"
             },
-            "time": "2020-09-30T16:50:06+00:00"
+            "time": "2020-10-14T08:21:11+00:00"
         },
         {
             "name": "craftcms/server-check",

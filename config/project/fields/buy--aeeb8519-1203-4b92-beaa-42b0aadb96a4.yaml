@@ -1,11 +1,11 @@
 contentColumnType: string(255)
-fieldGroup: dfe9b0d4-736b-4fbd-a584-88932d8d56a9
-handle: domain
+fieldGroup: 21a3d7e0-a500-4e8b-bac7-e602c69e79b3
+handle: buy
 instructions: ''
-name: Domain
-searchable: true
+name: Buy
+searchable: false
 settings:
-  maxLength: 255
+  maxLength: '255'
   placeholder: ''
 translationKeyFormat: null
 translationMethod: none

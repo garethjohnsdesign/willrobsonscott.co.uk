@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 21a3d7e0-a500-4e8b-bac7-e602c69e79b3
+handle: publisher
+instructions: ''
+name: Publisher
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

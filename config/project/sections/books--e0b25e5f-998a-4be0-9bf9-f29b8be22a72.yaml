@@ -1,0 +1,14 @@
+enableVersioning: true
+handle: books
+name: Books
+propagationMethod: all
+siteSettings:
+  8a2043ba-0ab6-482c-bb78-9c06b90e1891:
+    enabledByDefault: true
+    hasUrls: true
+    template: books/book
+    uriFormat: 'books/{slug}'
+structure:
+  maxLevels: 1
+  uid: 072e8273-396c-4b4a-9a16-386794a6c05e
+type: structure
