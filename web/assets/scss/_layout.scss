@@ -382,6 +382,18 @@ p a {
 }
 */
 
+.finals {
+  @include breakpoint(medium) {
+  a {
+    color: $white;
+    transition: $primary-transition;
+    &:hover {
+      color: $black;   
+    }
+  }
+}
+}
+
 .testing--hide {
 opacity: 0;
 }
