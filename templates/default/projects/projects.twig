@@ -50,6 +50,11 @@
   <a href="{{ project.url }}" class="square" data-text="{{ project.title }}">
   <div class="light-gray-background-color excerpt">
       {% if project.type == 'motion' %}
+
+      {% if project.overrideImage|length  %}
+      {% set overrideImage = project.overrideImage.one() %}
+      {% endif %}
+
       <div class="image--16-9" data-interchange="{% if image | length %}{% include "_includes/images/full/16-9/interchange-img-small-12-medium-6" %}{% endif %}" data-aos="fade-in">
       {% if project.previewVideo | length %}
       <video muted loop src="{{ project.previewVideo }}" class="video--background show-for-medium">
