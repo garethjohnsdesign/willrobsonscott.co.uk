@@ -129,6 +129,14 @@
 		"oAP": "/config/project/entryTypes/motion--c5ff3a2b-c1cb-40e5-a694-e79aa2e3b695.yaml",
 		"oF": 0
 		},
+	"/config/project/entryTypes/multidisciplinary--ac65cea7-9de9-45a0-bc47-636b91dd1fbf.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/entryTypes/multidisciplinary--ac65cea7-9de9-45a0-bc47-636b91dd1fbf.yaml",
+		"oF": 0
+		},
 	"/config/project/entryTypes/privacyPolicy--c900038a-ee1d-4ba1-afc1-e44173a44418.yaml": {
 		"cB": 0,
 		"ft": 8192,
@@ -207,6 +215,14 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/config/project/fields/caption--d977e3c9-4f15-497a-b9a5-cc6806a80c25.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/carousel--8f7ecaad-4266-45ea-8bf7-cdae7f95fcfd.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/carousel--8f7ecaad-4266-45ea-8bf7-cdae7f95fcfd.yaml",
 		"oF": 0
 		},
 	"/config/project/fields/copy--cc7a7777-17c5-45ef-829d-9b277cb85134.yaml": {
@@ -385,6 +401,14 @@
 		"oAP": "/config/project/matrixBlockTypes/images--39af2af9-c3b3-4914-8813-782b23812541.yaml",
 		"oF": 0
 		},
+	"/config/project/matrixBlockTypes/images--97e6c266-1357-419b-bcba-fc2a8bad82df.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/matrixBlockTypes/images--97e6c266-1357-419b-bcba-fc2a8bad82df.yaml",
+		"oF": 0
+		},
 	"/config/project/matrixBlockTypes/instagram--9f41361a-44ef-4536-81b0-867caeb4a8e9.yaml": {
 		"cB": 0,
 		"ft": 8192,
@@ -415,6 +439,14 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/config/project/matrixBlockTypes/video--d4bbd23b-1ec2-4296-809a-27e7fbe101b5.yaml",
+		"oF": 0
+		},
+	"/config/project/matrixBlockTypes/video--ff4f4f1f-0451-4162-8c80-d24632db77f0.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/matrixBlockTypes/video--ff4f4f1f-0451-4162-8c80-d24632db77f0.yaml",
 		"oF": 0
 		},
 	"/config/project/matrixBlockTypes/vimeo--c47aa106-bff2-4b9b-a157-7cc8f8ba1800.yaml": {
@@ -787,7 +819,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/classes/min/index-min.js",
+		"oAP": "/node_modules/swiper/esm/components/core/classes/min/index-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -842,7 +874,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/events/min/index-min.js",
+		"oAP": "/node_modules/swiper/esm/components/core/events/min/index-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -853,7 +885,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/events/min/onClick-min.js",
+		"oAP": "/node_modules/swiper/esm/components/core/events/min/onClick-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -864,7 +896,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/esm/components/core/events/min/onResize-min.js",
+		"oAP": "/node_modules/swiper/bundle/../esm/components/core/events/min/onResize-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1029,7 +1061,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/manipulation/min/addSlide-min.js",
+		"oAP": "/node_modules/swiper/esm/components/core/manipulation/min/addSlide-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1040,7 +1072,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/manipulation/min/appendSlide-min.js",
+		"oAP": "/node_modules/swiper/esm/components/core/manipulation/min/appendSlide-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1095,7 +1127,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/min/modular-min.js",
+		"oAP": "/node_modules/swiper/esm/components/core/min/modular-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1128,7 +1160,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/slide/min/slidePrev-min.js",
+		"oAP": "/node_modules/swiper/esm/components/core/slide/min/slidePrev-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1150,7 +1182,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/slide/min/slideTo-min.js",
+		"oAP": "/node_modules/swiper/esm/components/core/slide/min/slideTo-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1161,7 +1193,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/esm/components/core/slide/min/slideToClickedSlide-min.js",
+		"oAP": "/node_modules/swiper/bundle/../esm/components/core/slide/min/slideToClickedSlide-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1194,7 +1226,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/transition/min/index-min.js",
+		"oAP": "/node_modules/swiper/esm/components/core/transition/min/index-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1216,7 +1248,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/esm/components/core/transition/min/transitionEnd-min.js",
+		"oAP": "/node_modules/swiper/bundle/../esm/components/core/transition/min/transitionEnd-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1227,7 +1259,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/esm/components/core/transition/min/transitionStart-min.js",
+		"oAP": "/node_modules/swiper/bundle/../esm/components/core/transition/min/transitionStart-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1249,7 +1281,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/esm/components/core/translate/min/index-min.js",
+		"oAP": "/node_modules/swiper/bundle/../esm/components/core/translate/min/index-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1260,7 +1292,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/esm/components/core/translate/min/maxTranslate-min.js",
+		"oAP": "/node_modules/swiper/bundle/../esm/components/core/translate/min/maxTranslate-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1359,7 +1391,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/update/min/updateSize-min.js",
+		"oAP": "/node_modules/swiper/esm/components/core/update/min/updateSize-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1403,7 +1435,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/components/core/update/min/updateSlidesProgress-min.js",
+		"oAP": "/node_modules/swiper/esm/components/core/update/min/updateSlidesProgress-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1425,7 +1457,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/esm/modules/resize/min/resize-min.js",
+		"oAP": "/node_modules/swiper/bundle/../esm/modules/resize/min/resize-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1447,7 +1479,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/utils/min/get-browser-min.js",
+		"oAP": "/node_modules/swiper/esm/utils/min/get-browser-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1469,7 +1501,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/bundle/../esm/utils/min/get-support-min.js",
+		"oAP": "/node_modules/swiper/esm/utils/min/get-support-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1480,7 +1512,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/node_modules/swiper/esm/utils/min/utils-min.js",
+		"oAP": "/node_modules/swiper/bundle/../esm/utils/min/utils-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -2098,6 +2130,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/default/projects/_types/motion.twig",
+		"oF": 0
+		},
+	"/templates/default/projects/_types/multidisciplinary.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/default/projects/_types/multidisciplinary.twig",
 		"oF": 0
 		},
 	"/templates/default/projects/_types/stills.twig": {

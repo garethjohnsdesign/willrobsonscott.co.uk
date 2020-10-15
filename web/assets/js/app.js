@@ -60,9 +60,16 @@ $(function() {
 // 4. Plyr
 // ----------
 
-const players = Plyr.setup('.js-player');
+// const players = Plyr.setup('.js-player');
 
+/*
 const player = new Plyr('#player', {
+  ratio: '16:9',
+  controls: ['play', 'progress', 'mute', 'volume', 'pip', 'airplay', 'fullscreen']
+});
+*/
+
+const players = Plyr.setup('.js-player', {
   ratio: '16:9',
   controls: ['play', 'progress', 'mute', 'volume', 'pip', 'airplay', 'fullscreen']
 });
@@ -124,6 +131,27 @@ var videoGallery = new Swiper('.swiper--videos', {
     enabled: true,
   },
 })
+
+var multiGallery = new Swiper('.swiper--multi', {
+  // Optional parameters
+  loop: false,
+  
+  // If we need pagination
+  pagination: {
+    el: '.gallery-pagination',
+    type: 'fraction',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.button-next',
+    prevEl: '.button-prev',
+  },
+  keyboard: {
+    enabled: true,
+  },
+})
+
 
 
 // 6. Viewport Height Fix

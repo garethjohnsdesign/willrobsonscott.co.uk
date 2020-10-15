@@ -3,7 +3,6 @@
 {# Set parameters for prev/next elements list #}
 {% set params = craft.entries
 .section('projects')
-.type('motion')
 %}
 
 {% if entry.seoTitle|length %}
@@ -37,34 +36,64 @@
 
 
 {% block main %}
-{% if entry.videos|length > 1 %}
+
+<!-- Carousel -->
 <div class="grid-container">
-  <div class="swiper-container swiper--videos">
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        {% for video in entry.videos.all() %}
-        <div class="swiper-slide">
-          <div class="grid-x grid-padding-x align-center width-100">
-            <div class="small-12 medium-8 cell text-center">
-              <div class="js-player" data-plyr-provider="vimeo" data-plyr-embed-id="{{ video.video }}"></div>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-    </div>
-  </div>
-</div>
-{% else %}
-<div class="grid-container">
-<div class="grid-x grid-padding-x grid-padding-y align-center">
+
+
+<div class="swiper-container swiper--multi">
+<div class="swiper-wrapper" data-aos="fade-in" data-aos-delay="100">
+          <!-- Slides -->
+          {% set blocks = entry.carousel.all() %}
+          {% if blocks|length %}
+          {% for block in blocks %}
+
+{% if block.type == "video" %}
+<div class="swiper-slide">
+  <div class="grid-x grid-padding-x align-center width-100">
     <div class="small-12 medium-8 cell text-center">
-    {% for video in entry.videos.all() %}
-      <div class="js-player" data-plyr-provider="vimeo" data-plyr-embed-id="{{ video.video }}"></div>
-    {% endfor %}
+      <div class="js-player" data-plyr-provider="vimeo" data-plyr-embed-id="{{ block.video }}"></div>
     </div>
   </div>
 </div>
+{% elseif block.type == "images" %}
+{% for image in block.images.all() %}
+          <div class="swiper-slide" data-caption="{{image.caption}}">
+
+
+            <div class="grid-x grid-padding-x align-center">
+              <div class="small-12 cell text-center">
+
+            <div class="grid-y align-center height-100">
+              <div class="shrink cell">
+                {% switch image.aspectRatio %}
+                {% case "original" %}
+                <img class="max-viewheight-66" data-interchange="{% include "_includes/images/contained/original/interchange-img-small-12-medium-6" %}">
+                {% if image.caption %}<div class="padding-top-half">{{image.caption}}</div>{% endif %}
+                {% case "1-1" or "5-4" or "5-7" or "6-4" or "7-5" or "16-9" or "3-4" %}
+                <img class="max-viewheight-66" data-interchange="{% include "_includes/images/contained/"~image.aspectRatio~"/interchange-img-small-12-medium-12" %}">
+                {% default %}
+                <img class="max-viewheight-66" data-interchange="{% include "_includes/images/contained/7-5/interchange-img-small-12-medium-12" %}">
+                {% endswitch %}
+              </div>
+            </div>
+
+              </div>
+            </div>
+
+
+          </div>
+          {% endfor %}
 {% endif %}
+
+          {% endfor %}
+          {% endif %}
+      </div>
+  </div>
+
+</div>
+<!-- End Carousel -->
+
 
 <!-- Credits -->
 {% if entry.copy|length %}
@@ -108,14 +137,12 @@
     </ul>
   </div>
 
-{% if entry.videos|length > 1 %}
   <div class="shrink large-4 cell padding-bottom-0 show-for-large">
     <ul class="menu align-center">
      <li class="menu-text button-prev margin-bottom-0 padding-left-0">Prev</li>
      <li class="menu-text button-next margin-bottom-0 padding-right-0">Next</li>
     </ul>
   </div>
-{% endif %}
 
   <div class="shrink large-4 cell">
     <ul class="menu align-right">
