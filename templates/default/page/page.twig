@@ -1,13 +1,21 @@
 {% set bodyClass = 'page' %}
 
-{% if entry.seoTitle | length %}
+{% if entry.seoTitle|length %}
 {% set seoTitle = entry.seoTitle %}
-{% else %}
+{% elseif entry.title|length %}
 {% set seoTitle = entry.title %}
 {% endif %}
 
-{% if entry.seoDescription | length %}
-{% set seoDescription = entry.seoDescription %}
+{% if entry.seoDescription|length %}
+{% set seoDescription = entry.seoDescription|striptags|raw %}
+{% endif %}
+
+{% if entry.seoImage|length  %}
+{% set asset = entry.seoImage.one() %}
+{% set seoImage = craft.imager.transformImage(asset, { width: 1200, height: 630, dpr: 1, position: asset.getFocalPoint() }) %}
+{% elseif entry.image|length %}
+{% set asset = entry.image.one() %}
+{% set seoImage = craft.imager.transformImage(asset, { width: 1200, height: 630, dpr: 1, position: asset.getFocalPoint() }) %}
 {% endif %}
 
 {% extends "_layouts/site" %}

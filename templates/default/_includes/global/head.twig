@@ -32,7 +32,7 @@
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:url" content="{% if seoUrl is defined %}{{ seoUrl }}{% else %}{{ siteUrl }}{% endif %}">
-<meta name="twitter:title" content="{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}">
+<meta name="twitter:title" content="{% if seoTitle is defined %}{{ seoTitle }} - {% endif %}{{ siteName }}">
 <meta name="twitter:description" content="{% if seoDescription is defined %}{{ seoDescription|raw }}{% else %}{{ globalSeoDescription|raw }}{% endif %}">
 <meta name="twitter:image" content="{% if seoImage is defined %}{{ seoImage }}{% else %}{{ globalSeoImage }}{% endif %}">
 

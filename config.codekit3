@@ -1700,6 +1700,14 @@
 		"oAP": "/templates/default/projects/project.twig",
 		"oF": 0
 		},
+	"/templates/default/projects/projects.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/default/projects/projects.twig",
+		"oF": 0
+		},
 	"/templates/default/stills/stills.twig": {
 		"cB": 0,
 		"ft": 8192,
