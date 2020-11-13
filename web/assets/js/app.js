@@ -11,7 +11,7 @@ import Swup from 'swup';
 import SwupProgressPlugin from '@swup/progress-plugin';
 import SwupBodyClassPlugin from "@swup/body-class-plugin";
 import SwupScrollPlugin from '@swup/scroll-plugin';
-import SwupGaPlugin from '@swup/ga-plugin';
+import SwupGtagPlugin from 'swup-gtag-plugin';
 import SwupPreloadPlugin from '@swup/preload-plugin';
 
 
@@ -197,8 +197,9 @@ const options = {
   plugins: [
     new SwupProgressPlugin(),
     new SwupPreloadPlugin(),
-    new SwupBodyClassPlugin(),
-    new SwupGaPlugin(),
+    new SwupGtagPlugin({
+      gaMeasurementId: "GA_MEASUREMENT_ID"
+    }),
     new SwupScrollPlugin({
         doScrollingRightAway: false,
         animateScroll: true,
