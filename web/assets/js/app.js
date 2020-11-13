@@ -33,7 +33,7 @@ $(document).foundation();
 // 3. Video
 // ----------
 
-const videos = document.querySelectorAll("video")
+const videos = document.querySelectorAll(".video--playonhover")
 
 videos.forEach(video => {
   video.addEventListener("mouseover", function () {

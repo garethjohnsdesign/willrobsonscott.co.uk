@@ -1,0 +1,13 @@
+contentColumnType: boolean
+fieldGroup: 04b3b4bb-5a04-4d55-a1fc-39e4312e4e96
+handle: autoplay
+instructions: ''
+name: Autoplay
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch
