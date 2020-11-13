@@ -198,7 +198,7 @@ const options = {
     new SwupProgressPlugin(),
     new SwupPreloadPlugin(),
     new SwupGtagPlugin({
-      gaMeasurementId: "GA_MEASUREMENT_ID"
+      gaMeasurementId: "G-B9RRSCNZ0V"
     }),
     new SwupScrollPlugin({
         doScrollingRightAway: false,
