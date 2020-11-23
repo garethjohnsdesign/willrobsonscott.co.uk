@@ -113,6 +113,486 @@
 		"oAP": "/config/minify.php",
 		"oF": 0
 		},
+	"/config/project/entryTypes/books--7f16fa49-c7f6-4e7e-b7a8-b6d518295db6.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/entryTypes/books--7f16fa49-c7f6-4e7e-b7a8-b6d518295db6.yaml",
+		"oF": 0
+		},
+	"/config/project/entryTypes/home--988e0807-e76b-4064-8f2f-905c8828097c.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/entryTypes/home--988e0807-e76b-4064-8f2f-905c8828097c.yaml",
+		"oF": 0
+		},
+	"/config/project/entryTypes/information--67f175c1-7194-4328-aa27-4ad0e27768a3.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/entryTypes/information--67f175c1-7194-4328-aa27-4ad0e27768a3.yaml",
+		"oF": 0
+		},
+	"/config/project/entryTypes/motion--b29f0762-dc53-4d45-bbd6-0fcc5f61a98a.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/entryTypes/motion--b29f0762-dc53-4d45-bbd6-0fcc5f61a98a.yaml",
+		"oF": 0
+		},
+	"/config/project/entryTypes/motion--c5ff3a2b-c1cb-40e5-a694-e79aa2e3b695.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/entryTypes/motion--c5ff3a2b-c1cb-40e5-a694-e79aa2e3b695.yaml",
+		"oF": 0
+		},
+	"/config/project/entryTypes/multidisciplinary--ac65cea7-9de9-45a0-bc47-636b91dd1fbf.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/entryTypes/multidisciplinary--ac65cea7-9de9-45a0-bc47-636b91dd1fbf.yaml",
+		"oF": 0
+		},
+	"/config/project/entryTypes/privacyPolicy--c900038a-ee1d-4ba1-afc1-e44173a44418.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/entryTypes/privacyPolicy--c900038a-ee1d-4ba1-afc1-e44173a44418.yaml",
+		"oF": 0
+		},
+	"/config/project/entryTypes/stills--a282d1f2-522b-4d6f-a67e-3cfb7bca2ea7.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/entryTypes/stills--a282d1f2-522b-4d6f-a67e-3cfb7bca2ea7.yaml",
+		"oF": 0
+		},
+	"/config/project/entryTypes/stills--b9a9c1f1-451f-4377-a145-a8d0b903de0b.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/entryTypes/stills--b9a9c1f1-451f-4377-a145-a8d0b903de0b.yaml",
+		"oF": 0
+		},
+	"/config/project/entryTypes/terms--b90c1a49-ccce-4075-8492-a2c3ee7419ec.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/entryTypes/terms--b90c1a49-ccce-4075-8492-a2c3ee7419ec.yaml",
+		"oF": 0
+		},
+	"/config/project/fieldGroups/04b3b4bb-5a04-4d55-a1fc-39e4312e4e96.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fieldGroups/04b3b4bb-5a04-4d55-a1fc-39e4312e4e96.yaml",
+		"oF": 0
+		},
+	"/config/project/fieldGroups/21a3d7e0-a500-4e8b-bac7-e602c69e79b3.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fieldGroups/21a3d7e0-a500-4e8b-bac7-e602c69e79b3.yaml",
+		"oF": 0
+		},
+	"/config/project/fieldGroups/dfe9b0d4-736b-4fbd-a584-88932d8d56a9.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fieldGroups/dfe9b0d4-736b-4fbd-a584-88932d8d56a9.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/aspectRatio--1c4d0151-1407-47f3-8ac7-11bf44598233.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/aspectRatio--1c4d0151-1407-47f3-8ac7-11bf44598233.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/autoplay--2e811167-820b-4542-9cc0-0b4c88e1d0fe.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/autoplay--2e811167-820b-4542-9cc0-0b4c88e1d0fe.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/buy--aeeb8519-1203-4b92-beaa-42b0aadb96a4.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/buy--aeeb8519-1203-4b92-beaa-42b0aadb96a4.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/caption--d977e3c9-4f15-497a-b9a5-cc6806a80c25.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/caption--d977e3c9-4f15-497a-b9a5-cc6806a80c25.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/carousel--8f7ecaad-4266-45ea-8bf7-cdae7f95fcfd.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/carousel--8f7ecaad-4266-45ea-8bf7-cdae7f95fcfd.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/copy--cc7a7777-17c5-45ef-829d-9b277cb85134.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/copy--cc7a7777-17c5-45ef-829d-9b277cb85134.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/detail--a217b31b-0447-45c7-b27f-2a37ed6bf1cf.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/detail--a217b31b-0447-45c7-b27f-2a37ed6bf1cf.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/email--9ccc8465-065e-43d4-a80c-3659fb4e3376.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/email--9ccc8465-065e-43d4-a80c-3659fb4e3376.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/image--04ab3c60-f325-48ea-bf96-347befb870e0.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/image--04ab3c60-f325-48ea-bf96-347befb870e0.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/images--b4c9ab1f-2382-42ed-a624-d4a42f1389a7.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/images--b4c9ab1f-2382-42ed-a624-d4a42f1389a7.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/overrideImage--950a8b9e-b9f6-4099-8814-a9b66b09d03f.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/overrideImage--950a8b9e-b9f6-4099-8814-a9b66b09d03f.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/phoneNumber--e749f839-9bf1-45c4-95a0-85b305edeaa0.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/phoneNumber--e749f839-9bf1-45c4-95a0-85b305edeaa0.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/previewVideo--a2a8616b-6624-41af-93a2-0da771d6b113.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/previewVideo--a2a8616b-6624-41af-93a2-0da771d6b113.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/projects--372a5521-190d-44d5-83ad-8737b49bdbdd.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/projects--372a5521-190d-44d5-83ad-8737b49bdbdd.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/publicationDate--793cd68c-7303-449c-afa2-60c8e2e7c5c5.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/publicationDate--793cd68c-7303-449c-afa2-60c8e2e7c5c5.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/publisher--3e8a2e8b-ad1a-4fe2-ab55-c3c0fc2f7e8d.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/publisher--3e8a2e8b-ad1a-4fe2-ab55-c3c0fc2f7e8d.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/seoAnalytics--1b93a0c4-28cb-4536-935a-899b559bf95d.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/seoAnalytics--1b93a0c4-28cb-4536-935a-899b559bf95d.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/seoDescription--fe83906d-6f96-4f77-9151-41326628a78d.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/seoDescription--fe83906d-6f96-4f77-9151-41326628a78d.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/seoImage--1abe3543-0a12-4298-ad7d-1a93ca2d280c.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/seoImage--1abe3543-0a12-4298-ad7d-1a93ca2d280c.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/seoTitle--dfb201c1-5d86-40c2-8ef8-8a447a607828.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/seoTitle--dfb201c1-5d86-40c2-8ef8-8a447a607828.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/socials--177d26d8-196e-40fa-80c8-8dc29f7a4139.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/socials--177d26d8-196e-40fa-80c8-8dc29f7a4139.yaml",
+		"oF": 0
+		},
+	"/config/project/fields/videos--ecf52723-ca07-490b-9e3d-d118fc43328c.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/fields/videos--ecf52723-ca07-490b-9e3d-d118fc43328c.yaml",
+		"oF": 0
+		},
+	"/config/project/globalSets/seo--a107392e-6bfa-4c3c-aee9-6abe5b17e9e7.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/globalSets/seo--a107392e-6bfa-4c3c-aee9-6abe5b17e9e7.yaml",
+		"oF": 0
+		},
+	"/config/project/globalSets/site--1ec2a87c-017f-4647-8f1e-0d21e61cc0fd.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/globalSets/site--1ec2a87c-017f-4647-8f1e-0d21e61cc0fd.yaml",
+		"oF": 0
+		},
+	"/config/project/globalSets/socials--0616a60f-0742-4138-beeb-f8f16f67d0ad.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/globalSets/socials--0616a60f-0742-4138-beeb-f8f16f67d0ad.yaml",
+		"oF": 0
+		},
+	"/config/project/matrixBlockTypes/detail--eca191f4-90ee-49b4-900f-c24192b1d1d3.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/matrixBlockTypes/detail--eca191f4-90ee-49b4-900f-c24192b1d1d3.yaml",
+		"oF": 0
+		},
+	"/config/project/matrixBlockTypes/facebook--78f28cf7-5a64-4086-bf54-50021e0373af.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/matrixBlockTypes/facebook--78f28cf7-5a64-4086-bf54-50021e0373af.yaml",
+		"oF": 0
+		},
+	"/config/project/matrixBlockTypes/images--39af2af9-c3b3-4914-8813-782b23812541.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/matrixBlockTypes/images--39af2af9-c3b3-4914-8813-782b23812541.yaml",
+		"oF": 0
+		},
+	"/config/project/matrixBlockTypes/images--97e6c266-1357-419b-bcba-fc2a8bad82df.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/matrixBlockTypes/images--97e6c266-1357-419b-bcba-fc2a8bad82df.yaml",
+		"oF": 0
+		},
+	"/config/project/matrixBlockTypes/instagram--9f41361a-44ef-4536-81b0-867caeb4a8e9.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/matrixBlockTypes/instagram--9f41361a-44ef-4536-81b0-867caeb4a8e9.yaml",
+		"oF": 0
+		},
+	"/config/project/matrixBlockTypes/project--c5ee808a-47b8-49f3-8c7f-bf6d87abc918.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/matrixBlockTypes/project--c5ee808a-47b8-49f3-8c7f-bf6d87abc918.yaml",
+		"oF": 0
+		},
+	"/config/project/matrixBlockTypes/twitter--8d5ef6c6-820e-4020-9189-486b1dc4210a.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/matrixBlockTypes/twitter--8d5ef6c6-820e-4020-9189-486b1dc4210a.yaml",
+		"oF": 0
+		},
+	"/config/project/matrixBlockTypes/video--d4bbd23b-1ec2-4296-809a-27e7fbe101b5.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/matrixBlockTypes/video--d4bbd23b-1ec2-4296-809a-27e7fbe101b5.yaml",
+		"oF": 0
+		},
+	"/config/project/matrixBlockTypes/video--ff4f4f1f-0451-4162-8c80-d24632db77f0.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/matrixBlockTypes/video--ff4f4f1f-0451-4162-8c80-d24632db77f0.yaml",
+		"oF": 0
+		},
+	"/config/project/matrixBlockTypes/vimeo--c47aa106-bff2-4b9b-a157-7cc8f8ba1800.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/matrixBlockTypes/vimeo--c47aa106-bff2-4b9b-a157-7cc8f8ba1800.yaml",
+		"oF": 0
+		},
+	"/config/project/project.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/project.yaml",
+		"oF": 0
+		},
+	"/config/project/sections/books--e0b25e5f-998a-4be0-9bf9-f29b8be22a72.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/sections/books--e0b25e5f-998a-4be0-9bf9-f29b8be22a72.yaml",
+		"oF": 0
+		},
+	"/config/project/sections/home--8ae5cd1b-a7ec-4968-94f8-e41aec2b241d.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/sections/home--8ae5cd1b-a7ec-4968-94f8-e41aec2b241d.yaml",
+		"oF": 0
+		},
+	"/config/project/sections/information--19ee3fd7-33f3-48fa-a08c-0fcf07702e98.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/sections/information--19ee3fd7-33f3-48fa-a08c-0fcf07702e98.yaml",
+		"oF": 0
+		},
+	"/config/project/sections/motion--01a595ba-d703-4822-bdec-c18431fc75e9.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/sections/motion--01a595ba-d703-4822-bdec-c18431fc75e9.yaml",
+		"oF": 0
+		},
+	"/config/project/sections/privacyPolicy--05857c3a-0daf-412c-a320-780824b26ff5.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/sections/privacyPolicy--05857c3a-0daf-412c-a320-780824b26ff5.yaml",
+		"oF": 0
+		},
+	"/config/project/sections/projects--32174234-e8c3-40d4-9725-77ff2bd2366a.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/sections/projects--32174234-e8c3-40d4-9725-77ff2bd2366a.yaml",
+		"oF": 0
+		},
+	"/config/project/sections/stills--24a690f0-f706-4e2c-9c70-2d42b812b6e2.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/sections/stills--24a690f0-f706-4e2c-9c70-2d42b812b6e2.yaml",
+		"oF": 0
+		},
+	"/config/project/sections/terms--bfd43785-517b-421f-b68e-a7411a40fe44.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/sections/terms--bfd43785-517b-421f-b68e-a7411a40fe44.yaml",
+		"oF": 0
+		},
+	"/config/project/siteGroups/6ff0064a-f99e-4369-b70b-9dbe09620a22.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/siteGroups/6ff0064a-f99e-4369-b70b-9dbe09620a22.yaml",
+		"oF": 0
+		},
+	"/config/project/sites/default--8a2043ba-0ab6-482c-bb78-9c06b90e1891.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/sites/default--8a2043ba-0ab6-482c-bb78-9c06b90e1891.yaml",
+		"oF": 0
+		},
+	"/config/project/volumes/uploads--244f7440-a428-4998-8c23-00991784b369.yaml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/config/project/volumes/uploads--244f7440-a428-4998-8c23-00991784b369.yaml",
+		"oF": 0
+		},
 	"/config/redactor/Custom.json": {
 		"ft": 524288,
 		"oA": 1,
