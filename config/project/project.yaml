@@ -1,6 +1,6 @@
 assets:
   tempVolumeUid: 244f7440-a428-4998-8c23-00991784b369
-dateModified: 1605290004
+dateModified: 1612354957
 email:
   fromEmail: info@garethjohnsdesign.com
   fromName: 'Will Robson-Scott'
@@ -62,7 +62,7 @@ system:
   edition: solo
   live: true
   name: 'Will Robson-Scott'
-  schemaVersion: 3.5.13
+  schemaVersion: 3.6.1
   timeZone: UTC
 users:
   allowPublicRegistration: false
